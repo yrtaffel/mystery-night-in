@@ -1,241 +1,599 @@
 {
   "status": "DRAFT — Yehudit will review every card later",
   "pages": [
-    { "id": "made-with-love", "heading": "Made with love" },
-    { "id": "game-night", "heading": "Game night, any night" },
-    { "id": "cozy-nights-in", "heading": "Cozy nights in" },
-    { "id": "just-for-you", "heading": "Just for you" }
+    {
+      "id": "made-with-love",
+      "heading": "Made with love"
+    },
+    {
+      "id": "game-night",
+      "heading": "Game night, any night"
+    },
+    {
+      "id": "cozy-nights-in",
+      "heading": "Cozy nights in"
+    },
+    {
+      "id": "just-for-you",
+      "heading": "Just for you"
+    }
   ],
   "cards": [
     {
-      "number": 1, "page": "made-with-love", "title": "PORTRAIT SWAP",
-      "cost": "FREE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 2, "brains": 2,
-      "icons": ["together", "art"],
+      "number": 1,
+      "page": "made-with-love",
+      "title": "PORTRAIT SWAP",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art"
+      ],
       "instructions": "Hop on video and draw each other in any style: realistic, cartoony, or totally silly. Not feeling faces? Draw something that IS her, like a favorite snack, a symbol, or a mood. Set a 20-minute timer, then reveal at the same time."
     },
     {
-      "number": 2, "page": "made-with-love", "title": "SAME TUTORIAL, TWO PAINTINGS",
-      "cost": "FREE", "time": "ANYTIME", "duration": "1 HR", "spoons": 2, "brains": 2,
-      "icons": ["together", "art", "learn"],
+      "number": 2,
+      "page": "made-with-love",
+      "title": "SAME TUTORIAL, TWO PAINTINGS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "1 HR",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art",
+        "learn"
+      ],
       "instructions": "Pick one short art tutorial (10–20 min) and press play together. Follow along on video, then hold your paintings up to the camera. Same steps, two totally different results. That's the magic."
     },
     {
-      "number": 3, "page": "made-with-love", "title": "ONE PHOTO, THREE COLORS",
-      "cost": "FREE", "time": "ANYTIME", "duration": "1 HR", "spoons": 2, "brains": 3,
-      "icons": ["together", "art"],
+      "number": 3,
+      "page": "made-with-love",
+      "title": "ONE PHOTO, THREE COLORS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "1 HR",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "art"
+      ],
       "instructions": "Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything."
     },
     {
-      "number": 4, "page": "made-with-love", "title": "THE DEMOTIVATIONAL POSTER CONTEST",
-      "cost": "FREE", "time": "EVENING", "duration": "45 MIN", "spoons": 2, "brains": 3,
-      "icons": ["together", "game", "evening"],
+      "number": 4,
+      "page": "made-with-love",
+      "title": "THE DEMOTIVATIONAL POSTER CONTEST",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "game",
+        "evening"
+      ],
       "instructions": "Open Canva (free) and make the most gloriously UNmotivating poster you can, like \"Tomorrow: also an option.\" Send both to a third friend to judge without saying whose is whose. The winner gets bragging rights for a week.",
       "link": "https://www.canva.com"
     },
     {
-      "number": 5, "page": "made-with-love", "title": "SAND ART SESSION",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN", "spoons": 1, "brains": 1,
-      "icons": ["together", "art"],
+      "number": 5,
+      "page": "made-with-love",
+      "title": "SAND ART SESSION",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "art"
+      ],
       "instructions": "Open a free online sand-art site and pour colorful layers on screen. Share screenshots as you go. No mess, lots of calm.",
       "link": "https://thisissand.com"
     },
     {
-      "number": 6, "page": "made-with-love", "title": "FOLD IT TOGETHER",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "art", "learn"],
+      "number": 6,
+      "page": "made-with-love",
+      "title": "FOLD IT TOGETHER",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art",
+        "learn"
+      ],
       "instructions": "Pick a beginner origami tutorial and fold along on video. Any paper works: printer paper, a magazine page, even a receipt. Crumpled first tries are totally allowed."
     },
     {
-      "number": 7, "page": "made-with-love", "title": "FINGER PAINT PARTY",
-      "cost": "$0–5", "time": "DAYTIME", "duration": "45 MIN", "spoons": 2, "brains": 1,
-      "icons": ["together", "art", "daytime"],
+      "number": 7,
+      "page": "made-with-love",
+      "title": "FINGER PAINT PARTY",
+      "cost": "$0–5",
+      "time": "DAYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 1,
+      "icons": [
+        "together",
+        "art",
+        "daytime"
+      ],
       "instructions": "No brushes allowed! Use any paint, or mix flour, water, and food coloring. Paint with your fingers on video. Keep paper towels close."
     },
     {
-      "number": 8, "page": "made-with-love", "title": "TINY GARDEN, BIG CHECK-INS",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN + CHECK-INS", "spoons": 1, "brains": 1,
-      "icons": ["together", "art"],
+      "number": 8,
+      "page": "made-with-love",
+      "title": "TINY GARDEN, BIG CHECK-INS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN + CHECK-INS",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "art"
+      ],
       "instructions": "Each of you builds a little terrarium on Glass Jar Garden and names your plants. Check on each other's gardens over the next few weeks to see how they're growing.",
       "link": "https://glassjar.garden/"
     },
     {
-      "number": 9, "page": "made-with-love", "title": "BLIND DRAWING",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "art", "game"],
+      "number": 9,
+      "page": "made-with-love",
+      "title": "BLIND DRAWING",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art",
+        "game"
+      ],
       "instructions": "One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles."
     },
     {
-      "number": 10, "page": "made-with-love", "title": "POSTCARD PAINT & POST",
-      "cost": "$0–5", "time": "DAYTIME", "duration": "1 HR", "spoons": 2, "brains": 2,
-      "icons": ["together", "art", "snail-mail"],
+      "number": 10,
+      "page": "made-with-love",
+      "title": "POSTCARD PAINT & POST",
+      "cost": "$0–5",
+      "time": "DAYTIME",
+      "duration": "1 HR",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art",
+        "snail-mail"
+      ],
       "instructions": "Paint a postcard for each other on video. A 4×6 piece of cardstock works fine. Write a short note on the back, stamp it, and actually mail it. A surprise in the mailbox a few days later!"
     },
     {
-      "number": 11, "page": "game-night", "title": "WORD CHAIN",
-      "cost": "FREE", "time": "ANYTIME", "duration": "20 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "game"],
+      "number": 11,
+      "page": "game-night",
+      "title": "WORD CHAIN",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game"
+      ],
       "instructions": "Pick a category: foods, places, animals, anything. Each answer starts with the last letter of the one before (Apple → Eggplant → Tomato…). Stuck for 10 seconds? Point to the other side."
     },
     {
-      "number": 12, "page": "game-night", "title": "THE RIDDLE TRAIL",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30–45 MIN", "spoons": 1, "brains": 4,
-      "icons": ["together", "game"],
+      "number": 12,
+      "page": "game-night",
+      "title": "THE RIDDLE TRAIL",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30–45 MIN",
+      "spoons": 1,
+      "brains": 4,
+      "icons": [
+        "together",
+        "game"
+      ],
       "feature": "riddle-trail",
       "instructions": "A secret trail of riddles lives right here on this site! Solve one to unlock the next clue. Work it out together on video. A little prize message waits at the end."
     },
     {
-      "number": 13, "page": "game-night", "title": "CROSSWORD CO-OP",
-      "cost": "FREE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 1, "brains": 4,
-      "icons": ["together", "game"],
+      "number": 13,
+      "page": "game-night",
+      "title": "CROSSWORD CO-OP",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 4,
+      "icons": [
+        "together",
+        "game"
+      ],
       "instructions": "Find a tough crossword (Saturday puzzles are great) and solve it as a team. One of you shares your screen, and you both call out answers. Pen only if you're feeling brave."
     },
     {
-      "number": 14, "page": "game-night", "title": "RANSOM NOTE RACE",
-      "cost": "FREE", "time": "EVENING", "duration": "30 MIN", "spoons": 1, "brains": 3,
-      "icons": ["together", "game", "evening"],
-      "feature": "ransom-notes-TBD",
-      "instructions": "Get a silly prompt, like \"Explain why you're late. It involves a duck.\" Build your answer using only a random pile of word tiles. Read them aloud dramatically, then vote."
+      "number": 14,
+      "page": "game-night",
+      "title": "FRIDGE MAGNET MADNESS",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 3,
+      "icons": [
+        "together",
+        "game",
+        "evening"
+      ],
+      "feature": "fridge-magnets",
+      "instructions": "Open the Fridge Magnets page on this site and share your room code. You both get the same silly prompt and a pile of word tiles. Tap tiles to build the funniest answer you can, then reveal and read them out loud dramatically. Vote for the winner!"
     },
     {
-      "number": 15, "page": "game-night", "title": "STORY PING-PONG",
-      "cost": "FREE", "time": "ANYTIME", "duration": "20 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "game"],
+      "number": 15,
+      "page": "game-night",
+      "title": "STORY PING-PONG",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game"
+      ],
       "instructions": "Take turns writing a story one sentence at a time. No planning allowed. Read the whole thing aloud at the end in your best narrator voice."
     },
     {
-      "number": 16, "page": "game-night", "title": "PICTIONARY NIGHT",
-      "cost": "FREE", "time": "EVENING", "duration": "30 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "game", "evening"],
+      "number": 16,
+      "page": "game-night",
+      "title": "PICTIONARY NIGHT",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game",
+        "evening"
+      ],
       "instructions": "Open skribbl.io and make a PRIVATE room (never public). Turn on \"custom words only\" and add your own, inside jokes welcome! Draw, guess, giggle.",
       "link": "https://skribbl.io"
     },
     {
-      "number": 17, "page": "cozy-nights-in", "title": "MUG NIGHT",
-      "cost": "$0–5", "time": "EVENING", "duration": "45 MIN", "spoons": 2, "brains": 1,
-      "icons": ["together", "kitchen", "evening"],
+      "number": 17,
+      "page": "cozy-nights-in",
+      "title": "MUG NIGHT",
+      "cost": "$0–5",
+      "time": "EVENING",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 1,
+      "icons": [
+        "together",
+        "kitchen",
+        "evening"
+      ],
       "instructions": "Two mugs, one cozy night. Mug #1 is a microwave muffin or cupcake (gluten-free: use a GF flour blend or almond flour). Mug #2 is a fancy drink: cocoa with whipped cream, iced coffee, chai. Clink mugs on camera!"
     },
     {
-      "number": 18, "page": "cozy-nights-in", "title": "CHOPPED: SHABBOS EDITION",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN + COOKING", "spoons": 3, "brains": 3,
-      "icons": ["together", "kitchen"],
+      "number": 18,
+      "page": "cozy-nights-in",
+      "title": "CHOPPED: SHABBOS EDITION",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN + COOKING",
+      "spoons": 3,
+      "brains": 3,
+      "icons": [
+        "together",
+        "kitchen"
+      ],
       "instructions": "Give each other a video tour of your kitchen and pantry. Each of you picks 4 ingredients the other must use in her Shabbos menu this week. After Shabbos, share the results (and any happy accidents)."
     },
     {
-      "number": 19, "page": "cozy-nights-in", "title": "FOOD FUSION",
-      "cost": "$5–20", "time": "ANYTIME", "duration": "30 MIN + COOKING", "spoons": 3, "brains": 2,
-      "icons": ["together", "kitchen"],
+      "number": 19,
+      "page": "cozy-nights-in",
+      "title": "FOOD FUSION",
+      "cost": "$5–20",
+      "time": "ANYTIME",
+      "duration": "30 MIN + COOKING",
+      "spoons": 3,
+      "brains": 2,
+      "icons": [
+        "together",
+        "kitchen"
+      ],
       "instructions": "Open Google Arts & Culture's food experiment, which blends two cuisines into one new recipe. Pick a recipe for each other, or one you'll both make for Shabbos or dinner. Swap in kosher ingredients wherever needed.",
       "link": "https://artsandculture.google.com"
     },
     {
-      "number": 20, "page": "cozy-nights-in", "title": "TREAT-YOURSELF SPREE",
-      "cost": "~$10", "time": "DAYTIME", "duration": "1 HR", "spoons": 3, "brains": 1,
-      "icons": ["together", "shopping", "daytime"],
+      "number": 20,
+      "page": "cozy-nights-in",
+      "title": "TREAT-YOURSELF SPREE",
+      "cost": "~$10",
+      "time": "DAYTIME",
+      "duration": "1 HR",
+      "spoons": 3,
+      "brains": 1,
+      "icons": [
+        "together",
+        "shopping",
+        "daytime"
+      ],
       "instructions": "Agree on the same small budget. Each of you shops at the same time, in a store or online, for treats just for you. Meet back on video for a dramatic reveal, one item at a time."
     },
     {
-      "number": 21, "page": "cozy-nights-in", "title": "SCREEN-SHARE SHOPPING",
-      "cost": "FREE TO BROWSE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 1, "brains": 1,
-      "icons": ["together", "shopping"],
+      "number": 21,
+      "page": "cozy-nights-in",
+      "title": "SCREEN-SHARE SHOPPING",
+      "cost": "FREE TO BROWSE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "shopping"
+      ],
       "instructions": "Share screens and browse together, like a mall trip from the couch. Hunt for something specific or build dream carts. Buying is optional; opinions are required."
     },
     {
-      "number": 22, "page": "cozy-nights-in", "title": "PARTY TRICK ACADEMY",
-      "cost": "FREE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 2, "brains": 3,
-      "icons": ["together", "learn"],
+      "number": 22,
+      "page": "cozy-nights-in",
+      "title": "PARTY TRICK ACADEMY",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "learn"
+      ],
       "instructions": "Learn one simple trick together: a coin trick, a card trick, a tongue twister. Practice side by side on video. Then each of you gives a grand performance. Applause required."
     },
     {
-      "number": 23, "page": "cozy-nights-in", "title": "MANICURE NIGHT",
-      "cost": "$0–5", "time": "EVENING", "duration": "45 MIN", "spoons": 1, "brains": 1,
-      "icons": ["together", "pampering", "evening"],
+      "number": 23,
+      "page": "cozy-nights-in",
+      "title": "MANICURE NIGHT",
+      "cost": "$0–5",
+      "time": "EVENING",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "pampering",
+        "evening"
+      ],
       "instructions": "Gather your polish, files, and a cozy towel. Do your nails together on video while you chat. The drying time is perfect talking time."
     },
     {
-      "number": 24, "page": "cozy-nights-in", "title": "A–Z MOVIE NIGHT",
-      "cost": "FREE", "time": "EVENING", "duration": "2 HR", "spoons": 1, "brains": 1,
-      "icons": ["together", "movie", "evening"],
+      "number": 24,
+      "page": "cozy-nights-in",
+      "title": "A–Z MOVIE NIGHT",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "2 HR",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "movie",
+        "evening"
+      ],
       "feature": "letter-spinner",
       "instructions": "Spin the letter wheel on this card! Pick a movie that starts with that letter, then press play at the same time. Popcorn strongly encouraged."
     },
     {
-      "number": 25, "page": "cozy-nights-in", "title": "CHILDHOOD SHOW-AND-TELL",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN", "spoons": 1, "brains": 1,
-      "icons": ["together"],
+      "number": 25,
+      "page": "cozy-nights-in",
+      "title": "CHILDHOOD SHOW-AND-TELL",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together"
+      ],
       "instructions": "Each of you brings one object from childhood: a toy, a photo, a funny old drawing. Tell its story. Then ask each other one question you've never asked before."
     },
     {
-      "number": 26, "page": "cozy-nights-in", "title": "PLAYLIST SWAP",
-      "cost": "FREE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together"],
+      "number": 26,
+      "page": "cozy-nights-in",
+      "title": "PLAYLIST SWAP",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together"
+      ],
       "instructions": "Make a playlist for each other with songs that remind you of her. Bonus challenge: make one where the song titles, in order, spell out a secret message."
     },
     {
-      "number": 27, "page": "cozy-nights-in", "title": "MUSEUM HOPPING",
-      "cost": "FREE", "time": "ANYTIME", "duration": "45 MIN", "spoons": 1, "brains": 2,
-      "icons": ["together", "learn"],
+      "number": 27,
+      "page": "cozy-nights-in",
+      "title": "MUSEUM HOPPING",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "learn"
+      ],
       "instructions": "Pick a museum on Google Arts & Culture and tour it together over screen-share. Each of you chooses a \"favorite piece of the day\" and says why. Comfy shoes not needed.",
       "link": "https://artsandculture.google.com"
     },
     {
-      "number": 28, "page": "cozy-nights-in", "title": "LETTERS TO NEXT YEAR",
-      "cost": "$0–5", "time": "ANYTIME", "duration": "45 MIN", "spoons": 2, "brains": 3,
-      "icons": ["together", "snail-mail"],
+      "number": 28,
+      "page": "cozy-nights-in",
+      "title": "LETTERS TO NEXT YEAR",
+      "cost": "$0–5",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "snail-mail"
+      ],
       "instructions": "Each of you writes a letter to open in one year (next birthday?). What's happening now? What do you hope for? Seal it, write \"Open on ___,\" and hide it somewhere safe."
     },
     {
-      "number": 29, "page": "just-for-you", "title": "CURL UP & READ",
-      "cost": "FREE", "time": "ANYTIME", "duration": "1 HR", "spoons": 1, "brains": 2,
-      "icons": ["solo", "learn"],
+      "number": 29,
+      "page": "just-for-you",
+      "title": "CURL UP & READ",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "1 HR",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "solo",
+        "learn"
+      ],
       "instructions": "Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour. Just you and the story."
     },
     {
-      "number": 30, "page": "just-for-you", "title": "HOBBY STORE TREASURE HUNT",
-      "cost": "~$10", "time": "DAYTIME", "duration": "1 HR", "spoons": 3, "brains": 1,
-      "icons": ["solo", "shopping", "art"],
+      "number": 30,
+      "page": "just-for-you",
+      "title": "HOBBY STORE TREASURE HUNT",
+      "cost": "~$10",
+      "time": "DAYTIME",
+      "duration": "1 HR",
+      "spoons": 3,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "shopping",
+        "art"
+      ],
       "instructions": "Visit a craft store with a small budget. Wander every aisle slowly. Bring home one or two treasures that make you excited to create."
     },
     {
-      "number": 31, "page": "just-for-you", "title": "A PROPER BATH",
-      "cost": "$0–5", "time": "EVENING", "duration": "45 MIN", "spoons": 1, "brains": 1,
-      "icons": ["solo", "pampering", "evening"],
+      "number": 31,
+      "page": "just-for-you",
+      "title": "A PROPER BATH",
+      "cost": "$0–5",
+      "time": "EVENING",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "pampering",
+        "evening"
+      ],
       "instructions": "Run a warm bath with a few drops of essential oil (lavender is lovely). Dim the lights, play something calm, and soak. You deserve the slow version tonight."
     },
     {
-      "number": 32, "page": "just-for-you", "title": "THREE SMALL BEAUTIFUL THINGS",
-      "cost": "FREE", "time": "DAYTIME", "duration": "30 MIN", "spoons": 2, "brains": 1,
-      "icons": ["solo", "daytime"],
+      "number": 32,
+      "page": "just-for-you",
+      "title": "THREE SMALL BEAUTIFUL THINGS",
+      "cost": "FREE",
+      "time": "DAYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "daytime"
+      ],
       "instructions": "Leave your phone at home and take a gentle walk. Find 3 small beautiful things: a leaf, a pebble, a pretty shadow. Bring them home and snap a photo for this card."
     },
     {
-      "number": 33, "page": "just-for-you", "title": "PAINT TODAY IN THREE COLORS",
-      "cost": "FREE", "time": "ANYTIME", "duration": "30 MIN", "spoons": 2, "brains": 2,
-      "icons": ["solo", "art"],
+      "number": 33,
+      "page": "just-for-you",
+      "title": "PAINT TODAY IN THREE COLORS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "solo",
+        "art"
+      ],
       "instructions": "Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day."
     },
     {
-      "number": 34, "page": "just-for-you", "title": "A THANK-YOU NOTE",
-      "cost": "$0–1", "time": "ANYTIME", "duration": "20 MIN", "spoons": 1, "brains": 2,
-      "icons": ["solo", "snail-mail"],
+      "number": 34,
+      "page": "just-for-you",
+      "title": "A THANK-YOU NOTE",
+      "cost": "$0–1",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "solo",
+        "snail-mail"
+      ],
       "instructions": "Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right."
     },
     {
-      "number": 35, "page": "just-for-you", "title": "THE JOY LIST",
-      "cost": "FREE", "time": "ANYTIME", "duration": "20 MIN", "spoons": 1, "brains": 2,
-      "icons": ["solo"],
+      "number": 35,
+      "page": "just-for-you",
+      "title": "THE JOY LIST",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "solo"
+      ],
       "instructions": "Write down 20 tiny things that bring you joy, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day."
     },
     {
-      "number": 36, "page": "just-for-you", "title": "SUNSET & TEA",
-      "cost": "FREE", "time": "EVENING", "duration": "30 MIN", "spoons": 1, "brains": 1,
-      "icons": ["solo", "kitchen", "evening"],
+      "number": 36,
+      "page": "just-for-you",
+      "title": "SUNSET & TEA",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "kitchen",
+        "evening"
+      ],
       "instructions": "Look up today's sunset time. Brew a cup of tea, find a window or step outside, and watch the sky change."
     },
     {
-      "number": 37, "page": "just-for-you", "title": "JUDGE A BOOK BY ITS COVER",
-      "cost": "FREE", "time": "DAYTIME", "duration": "45 MIN", "spoons": 2, "brains": 1,
-      "icons": ["solo", "learn", "daytime"],
+      "number": 37,
+      "page": "just-for-you",
+      "title": "JUDGE A BOOK BY ITS COVER",
+      "cost": "FREE",
+      "time": "DAYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "learn",
+        "daytime"
+      ],
       "instructions": "Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won."
     }
   ]

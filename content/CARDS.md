@@ -68,10 +68,10 @@ _Built-in feature: riddle-trail_
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄 · 🧠🧠🧠🧠 · 💕🎲  
 Find a tough crossword (Saturday puzzles are great) and solve it as a team. One of you shares your screen, and you both call out answers. Pen only if you're feeling brave.
 
-**14 | RANSOM NOTE RACE**  
+**14 | FRIDGE MAGNET MADNESS**  
 $ FREE · ⏰ EVENING · ⏳ 30 MIN · 🥄 · 🧠🧠🧠 · 💕🎲🌙  
-Get a silly prompt, like "Explain why you're late. It involves a duck." Build your answer using only a random pile of word tiles. Read them aloud dramatically, then vote.
-_Built-in feature: ransom-notes-TBD_
+Open the Fridge Magnets page on this site and share your room code. You both get the same silly prompt and a pile of word tiles. Tap tiles to build the funniest answer you can, then reveal and read them out loud dramatically. Vote for the winner!
+_Built-in feature: fridge-magnets_
 
 **15 | STORY PING-PONG**  
 $ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 💕🎲  
