@@ -13,6 +13,14 @@
 ## Phases
 1. ✅ Cards drafted (Yehudit will review later)
 2. ⏳ Setup: Supabase + Vercel accounts, starter site
+   - ✅ Supabase project created (East US), keys added
+   - ✅ Starter site built (magic link + 6-digit code sign-in)
+   - ✅ Vercel import started
+   - ⏸️ NEXT (where we paused):
+     1. Make a Gmail app password (myaccount.google.com/apppasswords)
+     2. Put it into Supabase → Authentication → Emails → SMTP Settings
+     3. Update the Magic Link + Confirm signup email templates
+     4. Share the .vercel.app address; set Supabase Site URL + Redirect URLs
 3. Design + card grid + scratch-off
 4. Photos, journal, countdown, progress page, rules page
 5. Mini features: riddle trail, spinner, fridge magnets
