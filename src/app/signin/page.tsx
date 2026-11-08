@@ -21,10 +21,14 @@ export default function SignInPage() {
     setMessage("");
     const { error } = await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: `${window.location.origin}/auth/confirm` },
+      options: {
+        emailRedirectTo: `${window.location.origin}/auth/confirm`,
+        // Only pre-added people (Atara + Yehudit) can sign in.
+        shouldCreateUser: false,
+      },
     });
     setBusy(false);
-    if (error) setMessage("Hmm, that didn't work. Check the email and try again?");
+    if (error) setMessage(`Hmm, that didn't work. (${error.message})`);
     else setStep("code");
   }
 
@@ -34,7 +38,7 @@ export default function SignInPage() {
     setMessage("");
     const { error } = await supabase.auth.verifyOtp({ email, token: code.trim(), type: "email" });
     setBusy(false);
-    if (error) setMessage("That code didn't match. Try again, or request a new email.");
+    if (error) setMessage(`That code didn't work. Try again, or request a new email. (${error.message})`);
     else router.replace("/");
   }
 
