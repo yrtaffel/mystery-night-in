@@ -48,8 +48,8 @@ export default function SignInPage() {
 
   return (
     <main className="mx-auto flex min-h-dvh max-w-sm flex-col justify-center gap-6 px-4">
-      <h1 className="text-center text-3xl font-bold">Atara&apos;s Mystery Night In</h1>
-      <p className="text-center">Unknown adventure awaits!</p>
+      <h1 className="text-center font-title text-4xl font-semibold uppercase tracking-wide">Atara&apos;s Mystery Night In</h1>
+      <p className="-mt-3 text-center font-script text-4xl">Unknown adventure awaits!</p>
 
       {step === "email" ? (
         <form onSubmit={sendEmail} className="flex flex-col gap-3">
@@ -57,9 +57,9 @@ export default function SignInPage() {
           <input
             id="email" type="email" required autoComplete="email" value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="rounded border px-3 py-3 text-base"
+            className="rounded-lg border border-line bg-white/70 px-3 py-3 text-base"
           />
-          <button disabled={busy} className="rounded bg-purple-400 px-4 py-3 font-bold text-white">
+          <button disabled={busy} className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
             {busy ? "Sending…" : "Send my magic link"}
           </button>
         </form>
@@ -69,9 +69,9 @@ export default function SignInPage() {
           <input
             inputMode="numeric" autoComplete="one-time-code" value={code}
             onChange={(e) => setCode(e.target.value)}
-            className="rounded border px-3 py-3 text-center text-2xl tracking-widest"
+            className="rounded-lg border border-line bg-white/70 px-3 py-3 text-center text-2xl tracking-widest"
           />
-          <button disabled={busy} className="rounded bg-purple-400 px-4 py-3 font-bold text-white">
+          <button disabled={busy} className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
             {busy ? "Checking…" : "Let me in"}
           </button>
           <button type="button" onClick={() => setStep("email")} className="text-sm underline">

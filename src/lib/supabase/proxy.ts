@@ -3,6 +3,11 @@ import { type NextRequest, NextResponse } from "next/server";
 
 // Keeps the sign-in session fresh, and sends signed-out visitors to /signin.
 export async function updateSession(request: NextRequest) {
+  // Local design previews only (never in production): skip the sign-in check.
+  if (process.env.NODE_ENV === "development" && process.env.PREVIEW_NO_AUTH === "1") {
+    return NextResponse.next({ request });
+  }
+
   let response = NextResponse.next({ request });
 
   const supabase = createServerClient(
