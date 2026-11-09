@@ -28,8 +28,12 @@ export default function SignInPage() {
       },
     });
     setBusy(false);
-    if (error) setMessage(`Hmm, that didn't work. (${error.message})`);
-    else setStep("code");
+    if (!error) setStep("code");
+    if (error?.message.toLowerCase().includes("signups not allowed")) {
+      setMessage("Hmm, that email isn't on the guest list. Check for a typo?");
+    } else if (error) {
+      setMessage(`Hmm, that didn't work. (${error.message})`);
+    }
   }
 
   async function checkCode(e: React.FormEvent) {
