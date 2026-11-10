@@ -1,5 +1,9 @@
 import type { Card } from "@/lib/cards";
+import type { ProgressRow } from "@/lib/progress";
+import CardStatus from "./CardStatus";
 import { BrainIcon, CATEGORY, Spoon } from "./icons";
+import Journal from "./Journal";
+import PhotoSlot from "./PhotoSlot";
 import ScratchSquare from "./ScratchSquare";
 
 function MetaRow({ card }: { card: Card }) {
@@ -39,24 +43,21 @@ function IconColumn({ card }: { card: Card }) {
   );
 }
 
-function PhotoSlot() {
-  return (
-    <div className="flex h-full min-h-40 items-center justify-center gap-1 text-[11px] text-ink-soft min-[380px]:gap-1.5 min-[380px]:text-sm">
-      <span>Photo</span>
-      <span aria-hidden="true" className="h-32 w-7 shrink-0 -rotate-2 rounded-[2px] bg-[var(--tape)] shadow-sm min-[380px]:h-36 min-[380px]:w-10 sm:h-44 sm:w-12" />
-      <span>Here</span>
-    </div>
-  );
-}
-
 type Props = {
   card: Card;
   flip: boolean; // alternate sides, like the pages of a book
-  revealed: boolean;
+  row?: ProgressRow;
+  photoUrl?: string;
   onReveal: () => void;
+  onSave: (fields: Partial<ProgressRow>) => Promise<boolean>;
+  onUpload: (file: File) => Promise<boolean>;
+  onRemovePhoto: () => Promise<void>;
 };
 
-export default function CardItem({ card, flip, revealed, onReveal }: Props) {
+export default function CardItem({
+  card, flip, row, photoUrl, onReveal, onSave, onUpload, onRemovePhoto,
+}: Props) {
+  const revealed = !!row?.scratched_at;
   const square = (
     <div className="min-w-0 flex-1">
       <ScratchSquare card={card} revealed={revealed} onReveal={onReveal} />
@@ -64,7 +65,7 @@ export default function CardItem({ card, flip, revealed, onReveal }: Props) {
   );
 
   return (
-    <article className="py-6" aria-labelledby={`card-${card.number}`}>
+    <article id={`c${card.number}`} className="scroll-mt-16 py-6" aria-labelledby={`card-${card.number}`}>
       <div className={`flex items-center gap-2 ${flip ? "flex-row-reverse" : ""}`}>
         <div className="w-[64%] shrink-0">
           <MetaRow card={card} />
@@ -91,13 +92,29 @@ export default function CardItem({ card, flip, revealed, onReveal }: Props) {
               <Rating count={card.spoons} kind="spoons" />
               <Rating count={card.brains} kind="brains" />
             </div>
+            <CardStatus
+              row={row}
+              onComplete={() => onSave({ completed_at: new Date().toISOString() })}
+              onUndo={() => onSave({ completed_at: null })}
+            />
           </div>
         </div>
         <div className="min-w-0 flex-1">
-          <PhotoSlot />
+          <PhotoSlot
+            cardNumber={card.number}
+            locked={!revealed}
+            url={photoUrl}
+            onUpload={onUpload}
+            onRemove={onRemovePhoto}
+          />
         </div>
       </div>
-      <div className="journal-lines mt-3 h-[7.7rem]" aria-hidden="true" />
+      <Journal
+        cardNumber={card.number}
+        locked={!revealed}
+        initial={row?.journal ?? ""}
+        onSave={(journal) => onSave({ journal })}
+      />
     </article>
   );
 }
