@@ -32,7 +32,7 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const signedIn = !!data?.claims;
   const path = request.nextUrl.pathname;
-  const isPublic = path.startsWith("/signin") || path.startsWith("/auth");
+  const isPublic = path.startsWith("/signin") || path.startsWith("/auth") || path.startsWith("/play/");
 
   if (!signedIn && !isPublic) {
     const url = request.nextUrl.clone();

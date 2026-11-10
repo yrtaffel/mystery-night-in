@@ -58,7 +58,7 @@ Find a tough crossword (Saturday puzzles are great) and solve it as a team. One 
 
 **11 | FRIDGE MAGNET MADNESS**  
 $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠🧠 · 💕🎲  
-Open the Fridge Magnets page on this site and share your room code. You both get the same silly prompt and a pile of word tiles. Tap tiles to build the funniest answer you can, then reveal and read them out loud dramatically. Vote for the winner!
+Start a game on the Fridge Magnets page and send your friends the invite link (no account needed). Everyone gets the same silly prompt and a pile of word tiles. Build the funniest answer you can, read them out loud dramatically, and vote for the winner!
 _Built-in feature: fridge-magnets_
 
 **12 | STORY PING-PONG**  
