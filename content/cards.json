@@ -220,6 +220,22 @@
       "id": 4
     },
     {
+      "page": "game-night",
+      "title": "PUZZLE MASTER",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30–60 MIN",
+      "spoons": 2,
+      "brains": 4,
+      "icons": [
+        "together",
+        "solo",
+        "learn"
+      ],
+      "instructions": "Time to level up your cubing! Grab your 2x2 cube and learn to solve it, with a video tutorial or a friend who knows the moves. Go one step at a time and celebrate your first full solve. Bonus challenge: once the 2x2 clicks, the 4x4 is waiting for you.",
+      "id": 38
+    },
+    {
       "page": "cooking",
       "title": "MUG NIGHT",
       "cost": "$0–5",

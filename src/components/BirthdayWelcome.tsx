@@ -91,7 +91,7 @@ export default function BirthdayWelcome({ auto = true, openSignal = 0 }: { auto?
           onClick={close}
           className="relative mt-6 w-full rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white"
         >
-          Let&apos;s begin 🚂
+          Let&apos;s begin 🎟️
         </button>
       </div>
     </dialog>
