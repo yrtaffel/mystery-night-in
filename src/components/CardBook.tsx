@@ -1,12 +1,36 @@
 "use client";
 
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { cards, pages } from "@/lib/cards";
+import { EMPTY, matches, type Filters } from "@/lib/filters";
 import { useProgress, type ProgressRow } from "@/lib/progress";
 import CardItem from "./CardItem";
+import FilterBar from "./FilterBar";
+
+const FILTER_KEY = "card-filters";
 
 export default function CardBook() {
   const { rows, photoUrls, loaded, problem, save, uploadPhoto, removePhoto } = useProgress();
+  const [filters, setFilters] = useState<Filters>(EMPTY);
+
+  // Remember her filters on this device (nice-to-have; fine if it fails).
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(FILTER_KEY);
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- restore once after mount
+      if (saved) setFilters({ ...EMPTY, ...JSON.parse(saved) });
+    } catch {
+      // ignore
+    }
+  }, []);
+  const changeFilters = (f: Filters) => {
+    setFilters(f);
+    try {
+      localStorage.setItem(FILTER_KEY, JSON.stringify(f));
+    } catch {
+      // ignore
+    }
+  };
 
   const saveFields = useCallback(
     (n: number) => (fields: Partial<ProgressRow>) => save(n, fields),
@@ -24,6 +48,8 @@ export default function CardBook() {
     return <p className="py-16 text-center font-script text-3xl">Opening your book…</p>;
   }
 
+  const visible = cards.filter((c) => matches(c, rows[c.id], filters));
+
   let index = 0;
   return (
     <>
@@ -32,17 +58,27 @@ export default function CardBook() {
           {problem}
         </p>
       )}
-      {pages.map((page) => (
-        <section key={page.id} aria-labelledby={`page-${page.id}`} className="mb-10">
-          <h2
-            id={`page-${page.id}`}
-            className={`my-4 text-center font-script leading-tight text-[2.6rem]`}
-          >
-            <span className="swoosh">{page.heading}</span>
-          </h2>
-          {cards
-            .filter((c) => c.page === page.id)
-            .map((card) => {
+
+      <FilterBar filters={filters} onChange={changeFilters} shown={visible.length} total={cards.length} />
+
+      {visible.length === 0 && (
+        <p className="py-12 text-center">
+          No adventures match those filters.{" "}
+          <button type="button" className="underline" onClick={() => changeFilters(EMPTY)}>
+            Clear filters
+          </button>
+        </p>
+      )}
+
+      {pages.map((page) => {
+        const pageCards = visible.filter((c) => c.page === page.id);
+        if (!pageCards.length) return null;
+        return (
+          <section key={page.id} aria-labelledby={`page-${page.id}`} className="mb-10">
+            <h2 id={`page-${page.id}`} className="my-4 text-center font-script text-[2.6rem] leading-tight">
+              <span className="swoosh">{page.heading}</span>
+            </h2>
+            {pageCards.map((card) => {
               const row = rows[card.id];
               return (
                 <CardItem
@@ -58,8 +94,9 @@ export default function CardBook() {
                 />
               );
             })}
-        </section>
-      ))}
+          </section>
+        );
+      })}
     </>
   );
 }
