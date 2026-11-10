@@ -123,7 +123,7 @@ Make a playlist for each other with songs you think they'll like, or that remind
 $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠🧠 · 💕📚  
 Learn one simple trick together: a coin trick, a card trick, a tongue twister. Practice side by side, in person or on video. Then each of you gives a grand performance. Applause required.
 
-**25 | FORCING PARTY**  
+**25 | TA-DA LIST**  
 $ FREE · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄🥄 · 🧠🧠🧠 · 💕☀️  
 Each of you picks one task you've been putting off: that email, that drawer, that form. Get together, in person or on video, say it out loud, set a timer for 25 minutes, and work side by side. Cheer each other on at the end, no matter how far you got.
 
