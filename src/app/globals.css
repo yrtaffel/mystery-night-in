@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Atara's Mystery Night In — paper + lavender theme.
+/* Atara's Mystery Night In: paper + lavender theme.
    The site is a "book", so it always uses the light paper look. */
 :root {
   color-scheme: light;

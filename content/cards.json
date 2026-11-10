@@ -3,7 +3,7 @@
   "pages": [
     {
       "id": "made-with-love",
-      "heading": "Made with love"
+      "heading": "Unknown adventure awaits!"
     },
     {
       "id": "game-night",
@@ -173,8 +173,7 @@
       "brains": 2,
       "icons": [
         "together",
-        "art",
-        "snail-mail"
+        "art"
       ],
       "instructions": "Paint a postcard for each other on video. A 4×6 piece of cardstock works fine. Write a short note on the back, stamp it, and actually mail it. A surprise in the mailbox a few days later!"
     },
@@ -453,8 +452,7 @@
       "spoons": 2,
       "brains": 3,
       "icons": [
-        "together",
-        "snail-mail"
+        "together"
       ],
       "instructions": "Each of you writes a letter to open in one year (next birthday?). What's happening now? What do you hope for? Seal it, write \"Open on ___,\" and hide it somewhere safe."
     },
@@ -545,8 +543,7 @@
       "spoons": 1,
       "brains": 2,
       "icons": [
-        "solo",
-        "snail-mail"
+        "solo"
       ],
       "instructions": "Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right."
     },

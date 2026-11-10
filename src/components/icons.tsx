@@ -1,5 +1,5 @@
 import {
-  BookOpen, Brain, Coffee, Dice5, Mail, Moon, Paintbrush, Popcorn,
+  BookOpen, Brain, Coffee, Dice5, Moon, Paintbrush, Popcorn,
   ShoppingCart, Smile, Sun, type LucideProps,
 } from "lucide-react";
 import type { IconKey } from "@/lib/cards";
@@ -55,7 +55,6 @@ export const CATEGORY: Record<IconKey, { label: string; Icon: React.ComponentTyp
   learn: { label: "Learn", Icon: lucide(BookOpen) },
   pampering: { label: "Pampering", Icon: NailPolish },
   movie: { label: "Movie", Icon: lucide(Popcorn) },
-  "snail-mail": { label: "Snail mail", Icon: lucide(Mail) },
   daytime: { label: "Daytime", Icon: lucide(Sun) },
   evening: { label: "Evening", Icon: lucide(Moon) },
 };

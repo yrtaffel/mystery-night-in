@@ -2,7 +2,7 @@ import data from "../../content/cards.json";
 
 export type IconKey =
   | "together" | "solo" | "art" | "game" | "kitchen" | "shopping"
-  | "learn" | "pampering" | "movie" | "snail-mail" | "daytime" | "evening";
+  | "learn" | "pampering" | "movie" | "daytime" | "evening";
 
 export type Card = {
   number: number;

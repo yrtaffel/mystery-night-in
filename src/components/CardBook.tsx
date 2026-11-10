@@ -25,9 +25,12 @@ export default function CardBook() {
           {problem}
         </p>
       )}
-      {pages.map((page) => (
+      {pages.map((page, p) => (
         <section key={page.id} aria-labelledby={`page-${page.id}`} className="mb-10">
-          <h2 id={`page-${page.id}`} className="my-4 text-center font-script text-[2.6rem] leading-tight">
+          <h2
+            id={`page-${page.id}`}
+            className={`my-4 text-center font-script leading-tight ${p === 0 ? "text-[clamp(1.9rem,10vw,3.4rem)] whitespace-nowrap" : "text-[2.6rem]"}`}
+          >
             <span className="swoosh">{page.heading}</span>
           </h2>
           {cards

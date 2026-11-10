@@ -7,7 +7,7 @@ const data = JSON.parse(readFileSync("content/cards.json", "utf8"));
 const ICONS = {
   together: "💕", solo: "🧖‍♀️", art: "🎨", game: "🎲", kitchen: "☕",
   shopping: "🛒", learn: "📚", pampering: "💅", movie: "🍿",
-  "snail-mail": "✉️", daytime: "☀️", evening: "🌙",
+  daytime: "☀️", evening: "🌙",
 };
 
 const lines = [

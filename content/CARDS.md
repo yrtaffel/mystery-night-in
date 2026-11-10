@@ -2,11 +2,11 @@
 
 _Generated from `content/cards.json`. Edit the JSON, then run `node scripts/cards-to-md.mjs`._
 
-**Icon key:** 💕 together · 🧖‍♀️ solo · 🎨 art · 🎲 game · ☕ kitchen · 🛒 shopping · 📚 learn · 💅 pampering · 🍿 movie · ✉️ snail-mail · ☀️ daytime · 🌙 evening
+**Icon key:** 💕 together · 🧖‍♀️ solo · 🎨 art · 🎲 game · ☕ kitchen · 🛒 shopping · 📚 learn · 💅 pampering · 🍿 movie · ☀️ daytime · 🌙 evening
 
 ---
 
-## Made with love
+## Unknown adventure awaits!
 
 **1 | PORTRAIT SWAP**  
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕🎨  
@@ -48,7 +48,7 @@ $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨🎲
 One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles.
 
 **10 | POSTCARD PAINT & POST**  
-$ $0–5 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠 · 💕🎨✉️  
+$ $0–5 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠 · 💕🎨  
 Paint a postcard for each other on video. A 4×6 piece of cardstock works fine. Write a short note on the back, stamp it, and actually mail it. A surprise in the mailbox a few days later!
 
 ---
@@ -134,7 +134,7 @@ Pick a museum on Google Arts & Culture and tour it together over screen-share. E
 Link: https://artsandculture.google.com
 
 **28 | LETTERS TO NEXT YEAR**  
-$ $0–5 · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠🧠 · 💕✉️  
+$ $0–5 · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠🧠 · 💕  
 Each of you writes a letter to open in one year (next birthday?). What's happening now? What do you hope for? Seal it, write "Open on ___," and hide it somewhere safe.
 
 ---
@@ -162,7 +162,7 @@ $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 🧖‍♀️🎨
 Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day.
 
 **34 | A THANK-YOU NOTE**  
-$ $0–1 · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 🧖‍♀️✉️  
+$ $0–1 · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
 Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.
 
 **35 | THE JOY LIST**  

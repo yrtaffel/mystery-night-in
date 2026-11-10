@@ -2,13 +2,12 @@ import PageHeader from "@/components/PageHeader";
 import { BrainIcon, CATEGORY, Spoon } from "@/components/icons";
 
 const RULES = [
-  { title: "Connect from afar", text: "Close the other tabs and be present together." },
+  { title: "Connect", text: "Close all your tabs, physical and mental, and just enjoy this time." },
   {
     title: "Scratch it, try it",
     text: "You get a week, but no pressure. This is for fun, and technically, there are no rules.",
   },
   { title: "Save the memory", text: "Upload a photo and jot down a few lines." },
-  { title: "Share it", text: "Send your photo to your adventure buddy." },
 ];
 
 function KeyRow({ icon, label }: { icon: React.ReactNode; label: string }) {
@@ -23,7 +22,7 @@ function KeyRow({ icon, label }: { icon: React.ReactNode; label: string }) {
 export default function RulesPage() {
   return (
     <main className="mx-auto w-full max-w-xl overflow-x-clip px-4 pb-16">
-      <PageHeader script="Just for you" />
+      <PageHeader script="Made with love, just for you" />
 
       <h2 className="mt-2 mb-6 text-center font-script text-[2.6rem] leading-tight">
         <span className="swoosh">Rules</span>
