@@ -74,7 +74,7 @@ $ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 💕🎲🌐
 Start a game on the Would You Rather page and send your adventure buddy the invite link. You'll each get two choices and have to pick one. No skipping! Then see who picked what, and be ready to defend your answers.
 _Built-in feature: would-you-rather_
 
-**15 | ESCAPE THE ROOM**  
+**15 | THE GREAT ESCAPE(OLOGIST)**  
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄 · 🧠🧠🧠🧠 · 💕🎲🌐  
 Find a free online escape room and try to break out together, side by side or over screen-share. Read every clue, check every corner, and say every wild theory out loud. Can you escape before time runs out?
 
