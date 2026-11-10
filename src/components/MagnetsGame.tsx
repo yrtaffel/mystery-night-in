@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import {
-  apply, canVoteForSelf, dealTiles, host, joinTiles, makeId, newGame, voteCounts,
+  apply, canVoteForSelf, dealTiles, host, joinTiles, makeId, moreTiles, newGame, voteCounts,
   type Action, type GameState,
 } from "@/lib/magnets";
 import { connect, type Msg, type Transport } from "@/lib/magnetsTransport";
@@ -76,6 +76,37 @@ function Invite({ code }: { code: string }) {
         )}
       </div>
     </div>
+  );
+}
+
+const TIMER_CHOICES = [0, 60, 120, 180];
+
+function TimerPicker({ value, onChange }: { value: number; onChange: (sec: number) => void }) {
+  return (
+    <fieldset className="text-center">
+      <legend className="mx-auto mb-1.5 text-sm">Round timer</legend>
+      <div className="flex justify-center gap-2">
+        {TIMER_CHOICES.map((sec) => (
+          <button key={sec} type="button" aria-pressed={value === sec} onClick={() => onChange(sec)}
+            className={`rounded-full border px-3 py-1.5 text-xs font-medium ${
+              value === sec ? "border-lavender-deep bg-lavender-deep text-white" : "border-line bg-white/70"
+            }`}>
+            {sec ? `${sec / 60} min` : "Off"}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  );
+}
+
+function Countdown({ secondsLeft }: { secondsLeft: number }) {
+  const m = Math.floor(secondsLeft / 60);
+  const s = String(secondsLeft % 60).padStart(2, "0");
+  return (
+    <p className={`text-center font-title text-3xl font-semibold tracking-wider ${secondsLeft <= 15 ? "text-red-700" : ""}`}
+      role="timer" aria-label={`${secondsLeft} seconds left`}>
+      ⏱ {m}:{s}
+    </p>
   );
 }
 
@@ -189,6 +220,34 @@ export default function MagnetsGame() {
   }, [round]);
   const answer = useMemo(() => picked.map((i) => tiles[i]), [picked, tiles]);
 
+  // Round timer: tick every half second while a timed round is running.
+  const [now, setNow] = useState(() => Date.now());
+  const deadline = state?.phase === "writing" ? state.deadline : null;
+  useEffect(() => {
+    if (!deadline) return;
+    const t = setInterval(() => setNow(Date.now()), 500);
+    return () => clearInterval(t);
+  }, [deadline]);
+  // (Capped at the round length, in case this phone's clock is a bit off from the host's.)
+  const secondsLeft = deadline
+    ? Math.min(state?.timerSec || Infinity, Math.max(0, Math.ceil((deadline - now) / 1000)))
+    : null;
+
+  // Time's up: hand in whatever I've built; the host then reveals.
+  const iSubmitted = !!(me && state?.submitted[me.id]);
+  useEffect(() => {
+    if (secondsLeft !== 0 || !me) return;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    if (!iSubmitted && answer.length) {
+      timers.push(setTimeout(() => act({ type: "submit", id: me.id, words: answer }), 0));
+    }
+    if (me.isHost) {
+      timers.push(setTimeout(() => hostDo((s) => (s.phase === "writing" && s.round === round ? host.reveal(s) : s)), 2500));
+    }
+    return () => timers.forEach(clearTimeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run once when the timer hits zero
+  }, [secondsLeft === 0]);
+
   if (needName) {
     return (
       <NameForm onDone={(name) => {
@@ -248,6 +307,7 @@ export default function MagnetsGame() {
                 <input type="checkbox" checked={state.keepScore} onChange={() => hostDo(host.toggleScore)} className="h-5 w-5 accent-[var(--lavender-deep)]" />
                 Keep score
               </label>
+              <TimerPicker value={state.timerSec ?? 0} onChange={(sec) => hostDo((s) => host.setTimer(s, sec))} />
               <button type="button" onClick={() => hostDo(host.startRound)}
                 className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white">
                 {state.round ? "Start next round" : "Start the game!"}
@@ -264,6 +324,7 @@ export default function MagnetsGame() {
         <>
           <p className="text-center font-title text-xs tracking-[0.2em] text-ink-soft uppercase">Round {state.round}</p>
           <h2 className="mt-1 text-center text-xl font-semibold">{state.prompt}</h2>
+          {secondsLeft !== null && <div className="mt-2"><Countdown secondsLeft={secondsLeft} /></div>}
 
           {mySubmission ? (
             <div className="mt-6 text-center">
@@ -291,17 +352,21 @@ export default function MagnetsGame() {
               {answer.length > 0 && (
                 <p className="mt-2 text-center text-sm italic text-ink-soft">&ldquo;{joinTiles(answer)}&rdquo;</p>
               )}
-              <div className="mt-3 flex gap-2">
-                <button type="button" disabled={!answer.length} onClick={() => act({ type: "submit", id: me.id, words: answer })}
-                  className="flex-1 rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
-                  Done!
-                </button>
-                <button type="button" onClick={() => setPicked([])} className="rounded-full border border-line bg-white px-4 py-3 text-sm">
+              <button type="button" disabled={!answer.length} onClick={() => act({ type: "submit", id: me.id, words: answer })}
+                className="mt-3 w-full rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
+                Done!
+              </button>
+              <div className="mt-2 flex gap-2">
+                <button type="button" onClick={() => setPicked([])} className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
                   Clear
                 </button>
                 <button type="button" onClick={() => { setTiles(dealTiles()); setPicked([]); }}
-                  className="rounded-full border border-line bg-white px-4 py-3 text-sm">
+                  className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
                   New tiles
+                </button>
+                <button type="button" onClick={() => setTiles((t) => [...t, ...moreTiles(10)])}
+                  className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
+                  +10 tiles
                 </button>
               </div>
               <div className="mt-4 flex flex-wrap gap-2 rounded-2xl bg-[#e9e6ee] p-3" aria-label="Word tiles">
@@ -331,6 +396,9 @@ export default function MagnetsGame() {
         <>
           <h2 className="text-center text-xl font-semibold">{state.prompt}</h2>
           <p className="mt-1 text-center text-sm text-ink-soft">Read them out loud, dramatically. Then vote for your favorite!</p>
+          {state.order.length === 0 && (
+            <p className="mt-6 text-center">Time ran out before anyone finished! 😅</p>
+          )}
           <ul className="mt-5 space-y-4">
             {state.order.map((pid, i) => {
               const mine = pid === me.id;
@@ -398,6 +466,7 @@ export default function MagnetsGame() {
                   <input type="checkbox" checked={state.keepScore} onChange={() => hostDo(host.toggleScore)} className="h-5 w-5 accent-[var(--lavender-deep)]" />
                   Keep score
                 </label>
+                <TimerPicker value={state.timerSec ?? 0} onChange={(sec) => hostDo((s) => host.setTimer(s, sec))} />
                 <button type="button" className="text-sm underline" onClick={() => hostDo(host.backToLobby)}>
                   Back to the lobby (invite more friends)
                 </button>

@@ -76,8 +76,14 @@ export default function BirthdayWelcome({ auto = true, openSignal = 0 }: { auto?
         </h2>
         <p className="relative mt-1 font-title text-5xl font-semibold tracking-wide uppercase">Atara!</p>
         <p className="relative mt-5">
-          Inside are {cards.length} little adventures, made with love. Some are for you and a friend,
-          and some are just for you.
+          Inside are {cards.length} little adventures, made with love. Some are for you plus someone
+          else (it doesn&apos;t have to be me, but I will gladly join you for any of these little
+          adventures), and some are just for you.
+        </p>
+        <p className="relative mt-4">
+          Love you! 💜,
+          <br />
+          <span className="font-script text-3xl">Yehudit</span>
         </p>
         <p className="relative mt-3 font-script text-[clamp(1.45rem,7.5vw,1.875rem)]">Unknown adventure awaits!</p>
         <button
@@ -85,7 +91,7 @@ export default function BirthdayWelcome({ auto = true, openSignal = 0 }: { auto?
           onClick={close}
           className="relative mt-6 w-full rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white"
         >
-          Let&apos;s begin ✨
+          Let&apos;s begin 🚂
         </button>
       </div>
     </dialog>

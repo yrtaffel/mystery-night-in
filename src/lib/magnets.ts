@@ -15,6 +15,8 @@ export type GameState = {
   votes: Record<string, string>; // voter -> whose answer
   order: string[]; // reveal order (shuffled, so answers are anonymous)
   keepScore: boolean;
+  timerSec: number; // 0 = no timer
+  deadline: number | null; // when this round's timer runs out (ms)
 };
 
 export type Action =
@@ -44,6 +46,13 @@ export function makeCode() {
 
 export const makeId = () => Math.random().toString(36).slice(2, 10);
 
+/** A few extra tiles when the pile isn't cutting it. */
+export function moreTiles(count = 10): string[] {
+  const fn = shuffle(data.functionWords).slice(0, 3);
+  const rest = shuffle(data.words.filter((w) => !data.functionWords.includes(w))).slice(0, count - 4);
+  return shuffle([...fn, ...rest, pick(data.suffixes)]);
+}
+
 /** A fresh pile of word tiles for one player. */
 export function dealTiles(): string[] {
   const fn = shuffle(data.functionWords).slice(0, 14);
@@ -68,7 +77,7 @@ export function newGame(hostId: string, hostName: string, keepScore: boolean): G
   return {
     v: 1, hostId, phase: "lobby", round: 0, prompt: "", usedPrompts: [],
     players: [{ id: hostId, name: hostName, score: 0 }],
-    submitted: {}, votes: {}, order: [], keepScore,
+    submitted: {}, votes: {}, order: [], keepScore, timerSec: 0, deadline: null,
   };
 }
 
@@ -92,13 +101,18 @@ export const voteCounts = tally;
 /** Host-only moves. */
 export const host = {
   startRound(s: GameState): GameState {
-    return { ...s, v: s.v + 1, phase: "writing", round: s.round + 1, ...nextPrompt(s), submitted: {}, votes: {}, order: [] };
+    const deadline = s.timerSec ? Date.now() + s.timerSec * 1000 : null;
+    return { ...s, v: s.v + 1, phase: "writing", round: s.round + 1, ...nextPrompt(s), submitted: {}, votes: {}, order: [], deadline };
   },
   newPrompt(s: GameState): GameState {
-    return { ...s, v: s.v + 1, ...nextPrompt(s) };
+    const deadline = s.timerSec ? Date.now() + s.timerSec * 1000 : null;
+    return { ...s, v: s.v + 1, ...nextPrompt(s), deadline };
+  },
+  setTimer(s: GameState, sec: number): GameState {
+    return { ...s, v: s.v + 1, timerSec: sec };
   },
   reveal(s: GameState): GameState {
-    return { ...s, v: s.v + 1, phase: "reveal", order: shuffle(Object.keys(s.submitted)) };
+    return { ...s, v: s.v + 1, phase: "reveal", order: shuffle(Object.keys(s.submitted)), deadline: null };
   },
   results(s: GameState): GameState {
     const counts = tally(s);
