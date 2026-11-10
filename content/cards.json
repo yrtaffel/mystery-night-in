@@ -3,7 +3,7 @@
   "pages": [
     {
       "id": "made-with-love",
-      "heading": "Unknown adventure awaits!"
+      "heading": "Made with love"
     },
     {
       "id": "game-night",
@@ -25,19 +25,19 @@
       "title": "PORTRAIT SWAP",
       "cost": "FREE",
       "time": "ANYTIME",
-      "duration": "45 MIN",
-      "spoons": 2,
+      "duration": "30 MIN",
+      "spoons": 1,
       "brains": 2,
       "icons": [
         "together",
         "art"
       ],
-      "instructions": "Hop on video and draw each other in any style: realistic, cartoony, or totally silly. Not feeling faces? Draw something that IS her, like a favorite snack, a symbol, or a mood. Set a 20-minute timer, then reveal at the same time."
+      "instructions": "Use an AI image tool to make a portrait of your adventure buddy while they make one of you. Get it as accurate as you can, and sneak in as many Easter eggs as possible: favorite foods, hobbies, inside jokes. Then do a big reveal and see how many details you each can spot."
     },
     {
       "number": 2,
       "page": "made-with-love",
-      "title": "SAME TUTORIAL, TWO PAINTINGS",
+      "title": "SAME PROMPT, DIFFERENT OUTPUT",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "1 HR",
@@ -48,7 +48,7 @@
         "art",
         "learn"
       ],
-      "instructions": "Pick one short art tutorial (10–20 min) and press play together. Follow along on video, then hold your paintings up to the camera. Same steps, two totally different results. That's the magic."
+      "instructions": "Pick one short art tutorial (10–20 min) and follow it at the same time as your adventure buddy, side by side or on video. Then hold up your paintings. Same steps, two totally different results. That's the magic."
     },
     {
       "number": 3,
@@ -63,45 +63,46 @@
         "together",
         "art"
       ],
-      "instructions": "Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything."
+      "instructions": "Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything.",
+      "cut": true
     },
     {
       "number": 4,
       "page": "made-with-love",
-      "title": "THE DEMOTIVATIONAL POSTER CONTEST",
+      "title": "POSTER CONTEST",
       "cost": "FREE",
-      "time": "EVENING",
+      "time": "ANYTIME",
       "duration": "45 MIN",
       "spoons": 2,
       "brains": 3,
       "icons": [
         "together",
         "game",
-        "evening"
+        "art"
       ],
-      "instructions": "Open Canva (free) and make the most gloriously UNmotivating poster you can, like \"Tomorrow: also an option.\" Send both to a third friend to judge without saying whose is whose. The winner gets bragging rights for a week.",
+      "instructions": "Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!",
       "link": "https://www.canva.com"
     },
     {
       "number": 5,
       "page": "made-with-love",
-      "title": "SAND ART SESSION",
+      "title": "CLEANEST ART EVER",
       "cost": "FREE",
       "time": "ANYTIME",
-      "duration": "30 MIN",
+      "duration": "20 MIN",
       "spoons": 1,
       "brains": 1,
       "icons": [
         "together",
         "art"
       ],
-      "instructions": "Open a free online sand-art site and pour colorful layers on screen. Share screenshots as you go. No mess, lots of calm.",
+      "instructions": "Open a free online sand-art site (thisissand.com is a great one) and pour colorful layers on screen. Share screenshots as you go, or save it all for a big reveal at the end. No mess, lots of calm.",
       "link": "https://thisissand.com"
     },
     {
       "number": 6,
       "page": "made-with-love",
-      "title": "FOLD IT TOGETHER",
+      "title": "FOLD IT UP",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30 MIN",
@@ -112,36 +113,36 @@
         "art",
         "learn"
       ],
-      "instructions": "Pick a beginner origami tutorial and fold along on video. Any paper works: printer paper, a magazine page, even a receipt. Crumpled first tries are totally allowed."
+      "instructions": "Pick a beginner origami tutorial and learn it together. No special paper required; regular printer paper works fine. Crumpled first tries are totally allowed. Having fun? Pick another tutorial and keep folding!"
     },
     {
       "number": 7,
       "page": "made-with-love",
-      "title": "FINGER PAINT PARTY",
-      "cost": "$0–5",
-      "time": "DAYTIME",
+      "title": "GLOVES NOT ALLOWED",
+      "cost": "FREE",
+      "time": "ANYTIME",
       "duration": "45 MIN",
       "spoons": 2,
-      "brains": 1,
+      "brains": 2,
       "icons": [
         "together",
-        "art",
-        "daytime"
+        "art"
       ],
-      "instructions": "No brushes allowed! Use any paint, or mix flour, water, and food coloring. Paint with your fingers on video. Keep paper towels close."
+      "instructions": "Have a finger painting party! No brushes allowed. Grab any paint or art supplies you have on hand and make a painting using just your fingers. Keep paper towels close. Optional: paint the same scene, or each do your own thing and compare at the end."
     },
     {
       "number": 8,
       "page": "made-with-love",
-      "title": "TINY GARDEN, BIG CHECK-INS",
+      "title": "CYBER PLANTS",
       "cost": "FREE",
       "time": "ANYTIME",
-      "duration": "30 MIN + CHECK-INS",
+      "duration": "40 MIN + CHECK-INS",
       "spoons": 1,
-      "brains": 1,
+      "brains": 2,
       "icons": [
         "together",
-        "art"
+        "game",
+        "learn"
       ],
       "instructions": "Each of you builds a little terrarium on Glass Jar Garden and names your plants. Check on each other's gardens over the next few weeks to see how they're growing.",
       "link": "https://glassjar.garden/"
@@ -160,22 +161,23 @@
         "art",
         "game"
       ],
-      "instructions": "One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles."
+      "instructions": "One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles.",
+      "cut": true
     },
     {
       "number": 10,
       "page": "made-with-love",
-      "title": "POSTCARD PAINT & POST",
+      "title": "POSTCARD LOVE",
       "cost": "$0–5",
-      "time": "DAYTIME",
-      "duration": "1 HR",
-      "spoons": 2,
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 3,
       "brains": 2,
       "icons": [
         "together",
         "art"
       ],
-      "instructions": "Paint a postcard for each other on video. A 4×6 piece of cardstock works fine. Write a short note on the back, stamp it, and actually mail it. A surprise in the mailbox a few days later!"
+      "instructions": "Make a little art piece for each other: postcard-sized, or go bigger with an 8.5×11 sheet folded in thirds. A 4×6 piece of cardstock works great for a postcard. Write a short note on the back, stamp it, and actually mail it!"
     },
     {
       "number": 11,

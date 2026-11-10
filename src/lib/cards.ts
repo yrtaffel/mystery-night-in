@@ -17,9 +17,10 @@ export type Card = {
   instructions: string;
   link?: string;
   feature?: string;
+  cut?: boolean; // removed during review
 };
 
 export type Page = { id: string; heading: string };
 
 export const pages: Page[] = data.pages;
-export const cards = data.cards as Card[];
+export const cards = (data.cards as Card[]).filter((c) => !c.cut);

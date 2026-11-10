@@ -6,50 +6,42 @@ _Generated from `content/cards.json`. Edit the JSON, then run `node scripts/card
 
 ---
 
-## Unknown adventure awaits!
+## Made with love
 
 **1 | PORTRAIT SWAP**  
-$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕🎨  
-Hop on video and draw each other in any style: realistic, cartoony, or totally silly. Not feeling faces? Draw something that IS her, like a favorite snack, a symbol, or a mood. Set a 20-minute timer, then reveal at the same time.
+$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨  
+Use an AI image tool to make a portrait of your adventure buddy while they make one of you. Get it as accurate as you can, and sneak in as many Easter eggs as possible: favorite foods, hobbies, inside jokes. Then do a big reveal and see how many details you each can spot.
 
-**2 | SAME TUTORIAL, TWO PAINTINGS**  
+**2 | SAME PROMPT, DIFFERENT OUTPUT**  
 $ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠 · 💕🎨📚  
-Pick one short art tutorial (10–20 min) and press play together. Follow along on video, then hold your paintings up to the camera. Same steps, two totally different results. That's the magic.
+Pick one short art tutorial (10–20 min) and follow it at the same time as your adventure buddy, side by side or on video. Then hold up your paintings. Same steps, two totally different results. That's the magic.
 
-**3 | ONE PHOTO, THREE COLORS**  
-$ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠🧠 · 💕🎨  
-Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything.
-
-**4 | THE DEMOTIVATIONAL POSTER CONTEST**  
-$ FREE · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄 · 🧠🧠🧠 · 💕🎲🌙  
-Open Canva (free) and make the most gloriously UNmotivating poster you can, like "Tomorrow: also an option." Send both to a third friend to judge without saying whose is whose. The winner gets bragging rights for a week.
+**4 | POSTER CONTEST**  
+$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠🧠 · 💕🎲🎨  
+Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!
 Link: https://www.canva.com
 
-**5 | SAND ART SESSION**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠 · 💕🎨  
-Open a free online sand-art site and pour colorful layers on screen. Share screenshots as you go. No mess, lots of calm.
+**5 | CLEANEST ART EVER**  
+$ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠 · 💕🎨  
+Open a free online sand-art site (thisissand.com is a great one) and pour colorful layers on screen. Share screenshots as you go, or save it all for a big reveal at the end. No mess, lots of calm.
 Link: https://thisissand.com
 
-**6 | FOLD IT TOGETHER**  
+**6 | FOLD IT UP**  
 $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨📚  
-Pick a beginner origami tutorial and fold along on video. Any paper works: printer paper, a magazine page, even a receipt. Crumpled first tries are totally allowed.
+Pick a beginner origami tutorial and learn it together. No special paper required; regular printer paper works fine. Crumpled first tries are totally allowed. Having fun? Pick another tutorial and keep folding!
 
-**7 | FINGER PAINT PARTY**  
-$ $0–5 · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠 · 💕🎨☀️  
-No brushes allowed! Use any paint, or mix flour, water, and food coloring. Paint with your fingers on video. Keep paper towels close.
+**7 | GLOVES NOT ALLOWED**  
+$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕🎨  
+Have a finger painting party! No brushes allowed. Grab any paint or art supplies you have on hand and make a painting using just your fingers. Keep paper towels close. Optional: paint the same scene, or each do your own thing and compare at the end.
 
-**8 | TINY GARDEN, BIG CHECK-INS**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN + CHECK-INS · 🥄 · 🧠 · 💕🎨  
+**8 | CYBER PLANTS**  
+$ FREE · ⏰ ANYTIME · ⏳ 40 MIN + CHECK-INS · 🥄 · 🧠🧠 · 💕🎲📚  
 Each of you builds a little terrarium on Glass Jar Garden and names your plants. Check on each other's gardens over the next few weeks to see how they're growing.
 Link: https://glassjar.garden/
 
-**9 | BLIND DRAWING**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨🎲  
-One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles.
-
-**10 | POSTCARD PAINT & POST**  
-$ $0–5 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠 · 💕🎨  
-Paint a postcard for each other on video. A 4×6 piece of cardstock works fine. Write a short note on the back, stamp it, and actually mail it. A surprise in the mailbox a few days later!
+**10 | POSTCARD LOVE**  
+$ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄🥄 · 🧠🧠 · 💕🎨  
+Make a little art piece for each other: postcard-sized, or go bigger with an 8.5×11 sheet folded in thirds. A 4×6 piece of cardstock works great for a postcard. Write a short note on the back, stamp it, and actually mail it!
 
 ---
 

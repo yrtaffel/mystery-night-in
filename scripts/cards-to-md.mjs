@@ -21,7 +21,7 @@ const lines = [
 
 for (const page of data.pages) {
   lines.push("---", "", `## ${page.heading}`, "");
-  for (const c of data.cards.filter((c) => c.page === page.id)) {
+  for (const c of data.cards.filter((c) => c.page === page.id && !c.cut)) {
     lines.push(`**${c.number} | ${c.title}**  `);
     lines.push(
       `$ ${c.cost} · ⏰ ${c.time} · ⏳ ${c.duration} · ${"🥄".repeat(c.spoons)} · ${"🧠".repeat(c.brains)} · ${c.icons.map((i) => ICONS[i]).join("")}  `
@@ -34,4 +34,4 @@ for (const page of data.pages) {
 }
 
 writeFileSync("content/CARDS.md", lines.join("\n"));
-console.log(`Wrote content/CARDS.md (${data.cards.length} cards)`);
+console.log(`Wrote content/CARDS.md (${data.cards.filter((c) => !c.cut).length} cards)`);
