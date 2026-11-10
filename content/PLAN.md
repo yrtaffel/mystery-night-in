@@ -18,8 +18,7 @@
    - ✅ Vercel import started
    - ✅ Gmail SMTP connected (custom sender), signups locked, 2 users pre-added
    - ✅ Live at https://mystery-night-in.vercel.app — sign-in email works
-   - TODO later: free keep-awake ping so Supabase doesn't pause
 3. ✅ Design + card grid + scratch-off
 4. ✅ Photos, journal, countdown, progress page, rules page ("I did it!" → "Nice job! Hope you enjoyed that!"; books stay separate per person)
-5. Mini features: riddle trail, spinner, fridge magnets
-6. Birthday welcome touch + final polish
+5. ✅ Mini features: Time Travel riddle trail, Fridge Magnets (guest links, optional score), filters, 7 sections
+6. ✅ Birthday welcome, daily keep-awake ping (Vercel cron), final polish

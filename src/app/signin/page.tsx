@@ -47,9 +47,9 @@ export default function SignInPage() {
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-sm flex-col justify-center gap-6 px-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-sm flex-col justify-center gap-6 px-4">
       <h1 className="text-center font-title text-4xl font-semibold uppercase tracking-wide">Atara&apos;s Mystery Night In</h1>
-      <p className="-mt-3 text-center font-script text-4xl">Unknown adventure awaits!</p>
+      <p className="-mt-3 text-center font-script text-[clamp(1.7rem,9vw,2.25rem)]">Unknown adventure awaits!</p>
 
       {step === "email" ? (
         <form onSubmit={sendEmail} className="flex flex-col gap-3">

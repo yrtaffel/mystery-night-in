@@ -70,3 +70,17 @@ body {
 dialog::backdrop {
   background: rgba(42, 39, 48, 0.45);
 }
+
+/* Birthday confetti (still for people who prefer less motion). */
+.confetti {
+  animation-name: confetti-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes confetti-fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(560px) rotate(540deg); opacity: 0.2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .confetti { animation: none; top: auto; bottom: 8px; opacity: 0.7; }
+}

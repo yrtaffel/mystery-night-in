@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import ReplayWelcome from "@/components/ReplayWelcome";
 import { BrainIcon, CATEGORY, Spoon } from "@/components/icons";
 
 const RULES = [
@@ -50,6 +51,7 @@ export default function RulesPage() {
           <KeyRow key={key} icon={<Icon className="h-7 w-7" />} label={label} />
         ))}
       </ul>
+      <ReplayWelcome />
     </main>
   );
 }
