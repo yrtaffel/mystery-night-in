@@ -108,7 +108,7 @@ $ FREE · ⏰ EVENING · ⏳ 2 HR · 🥄🥄 · 🧠 · 💕🍿🌙
 Ask Alexa (or any random letter picker) to choose a letter from A to Z. Pick a movie that starts with that letter, press play, and watch together. Popcorn strongly encouraged.
 
 **21 | MANI HAPPY RETURNS**  
-$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕💅🌙  
+$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄🥄 · 🧠🧠 · 💕💅🌙  
 Gather your polish, files, and a cozy towel. Do your nails together, in person or on video, while you chat. The drying time is perfect talking time.
 
 **22 | SHOW AND TELL**  
