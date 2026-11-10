@@ -184,7 +184,8 @@
         "game"
       ],
       "instructions": "Take turns writing a story one sentence at a time. No planning allowed. Read the whole thing aloud at the end in your best narrator voice.",
-      "id": 15
+      "id": 15,
+      "cut": true
     },
     {
       "page": "game-night",
@@ -469,7 +470,7 @@
     },
     {
       "page": "just-for-you",
-      "title": "TY",
+      "title": "THANK YOU, GOOD NIGHT",
       "cost": "$0–1",
       "time": "ANYTIME",
       "duration": "15 MIN",
