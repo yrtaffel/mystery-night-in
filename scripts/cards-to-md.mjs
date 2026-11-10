@@ -19,10 +19,11 @@ const lines = [
   "",
 ];
 
+let n = 0;
 for (const page of data.pages) {
   lines.push("---", "", `## ${page.heading}`, "");
   for (const c of data.cards.filter((c) => c.page === page.id && !c.cut)) {
-    lines.push(`**${c.number} | ${c.title}**  `);
+    lines.push(`**${++n} | ${c.title}**  `);
     lines.push(
       `$ ${c.cost} · ⏰ ${c.time} · ⏳ ${c.duration} · ${"🥄".repeat(c.spoons)} · ${"🧠".repeat(c.brains)} · ${c.icons.map((i) => ICONS[i]).join("")}  `
     );

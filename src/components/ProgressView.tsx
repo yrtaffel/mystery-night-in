@@ -21,7 +21,7 @@ export default function ProgressView() {
   const scratched = list.filter((r) => r.scratched_at).length;
   const completed = list.filter((r) => r.completed_at).length;
   const photos = cards.flatMap((card) => {
-    const path = rows[card.number]?.photo_path;
+    const path = rows[card.id]?.photo_path;
     const url = path ? photoUrls[path] : undefined;
     return url ? [{ card, url }] : [];
   });
@@ -50,8 +50,8 @@ export default function ProgressView() {
       ) : (
         <ul className="grid grid-cols-2 gap-x-4 gap-y-8">
           {photos.map(({ card, url }, i) => (
-            <li key={card.number}>
-              <Link href={`/#c${card.number}`} className="block">
+            <li key={card.id}>
+              <Link href={`/#c${card.id}`} className="block">
                 <span className={`relative block bg-white p-1.5 pb-3 shadow-md ${i % 2 ? "rotate-2" : "-rotate-2"}`}>
                   <span aria-hidden="true"
                     className="absolute -top-3 left-1/2 block h-6 w-14 -translate-x-1/2 -rotate-6 rounded-[2px] bg-[var(--tape)] shadow-sm" />

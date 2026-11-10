@@ -36,18 +36,18 @@ export default function CardBook() {
           {cards
             .filter((c) => c.page === page.id)
             .map((card) => {
-              const row = rows[card.number];
+              const row = rows[card.id];
               return (
                 <CardItem
-                  key={card.number}
+                  key={card.id}
                   card={card}
                   flip={index++ % 2 === 1}
                   row={row}
                   photoUrl={row?.photo_path ? photoUrls[row.photo_path] : undefined}
-                  onReveal={() => save(card.number, { scratched_at: new Date().toISOString() })}
-                  onSave={saveFields(card.number)}
-                  onUpload={(file) => uploadPhoto(card.number, file)}
-                  onRemovePhoto={() => removePhoto(card.number)}
+                  onReveal={() => save(card.id, { scratched_at: new Date().toISOString() })}
+                  onSave={saveFields(card.id)}
+                  onUpload={(file) => uploadPhoto(card.id, file)}
+                  onRemovePhoto={() => removePhoto(card.id)}
                 />
               );
             })}

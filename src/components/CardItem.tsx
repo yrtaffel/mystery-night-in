@@ -65,7 +65,7 @@ export default function CardItem({
   );
 
   return (
-    <article id={`c${card.number}`} className="scroll-mt-16 py-6" aria-labelledby={`card-${card.number}`}>
+    <article id={`c${card.id}`} className="scroll-mt-16 py-6" aria-labelledby={`card-${card.number}`}>
       <div className={`flex items-center gap-2 ${flip ? "flex-row-reverse" : ""}`}>
         <div className="w-[64%] shrink-0">
           <MetaRow card={card} />

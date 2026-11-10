@@ -5,7 +5,8 @@ export type IconKey =
   | "learn" | "pampering" | "movie" | "daytime" | "evening";
 
 export type Card = {
-  number: number;
+  id: number; // permanent; progress is saved under this, so it never changes
+  number: number; // the number shown on the card (1, 2, 3… in page order)
   page: string;
   title: string;
   cost: string;
@@ -17,10 +18,18 @@ export type Card = {
   instructions: string;
   link?: string;
   feature?: string;
-  cut?: boolean; // removed during review
 };
 
 export type Page = { id: string; heading: string };
 
+type RawCard = Omit<Card, "number"> & { cut?: boolean };
+
 export const pages: Page[] = data.pages;
-export const cards = (data.cards as Card[]).filter((c) => !c.cut);
+
+export const cards: Card[] = pages
+  .flatMap((page) => (data.cards as RawCard[]).filter((c) => c.page === page.id && !c.cut))
+  .map((c, i) => {
+    const card: Card & { cut?: boolean } = { ...c, number: i + 1 };
+    delete card.cut;
+    return card;
+  });
