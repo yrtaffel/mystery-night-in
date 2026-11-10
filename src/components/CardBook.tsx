@@ -5,13 +5,40 @@ import { cards, pages } from "@/lib/cards";
 import { EMPTY, matches, type Filters } from "@/lib/filters";
 import { useProgress, type ProgressRow } from "@/lib/progress";
 import CardItem from "./CardItem";
+import CardRow from "./CardRow";
 import FilterBar from "./FilterBar";
 
 const FILTER_KEY = "card-filters";
+const VIEW_KEY = "card-view";
+type View = "book" | "list";
+
+function ViewToggle({ view, onChange }: { view: View; onChange: (v: View) => void }) {
+  const opt = (v: View, label: string) => (
+    <button
+      type="button"
+      aria-pressed={view === v}
+      onClick={() => onChange(v)}
+      className={`flex-1 rounded-full px-4 py-1.5 font-title text-sm tracking-[0.15em] uppercase ${
+        view === v ? "bg-lavender-deep text-white" : "text-ink-soft"
+      }`}
+    >
+      {label}
+    </button>
+  );
+  return (
+    <div role="group" aria-label="How to show the cards"
+      className="mx-auto mb-4 flex max-w-xs rounded-full border border-line bg-white/70 p-1">
+      {opt("book", "Book view")}
+      {opt("list", "List view")}
+    </div>
+  );
+}
 
 export default function CardBook() {
   const { rows, photoUrls, loaded, problem, save, uploadPhoto, removePhoto } = useProgress();
   const [filters, setFilters] = useState<Filters>(EMPTY);
+  const [view, setView] = useState<View>("book");
+  const [openId, setOpenId] = useState<number | null>(null);
 
   // Remember her filters on this device (nice-to-have; fine if it fails).
   useEffect(() => {
@@ -19,6 +46,7 @@ export default function CardBook() {
       const saved = localStorage.getItem(FILTER_KEY);
       // eslint-disable-next-line react-hooks/set-state-in-effect -- restore once after mount
       if (saved) setFilters({ ...EMPTY, ...JSON.parse(saved) });
+      if (localStorage.getItem(VIEW_KEY) === "list") setView("list");
     } catch {
       // ignore
     }
@@ -31,6 +59,28 @@ export default function CardBook() {
       // ignore
     }
   };
+
+  const changeView = (v: View) => {
+    setView(v);
+    try {
+      localStorage.setItem(VIEW_KEY, v);
+    } catch {
+      // ignore
+    }
+  };
+
+  // From the list: switch to the book and jump to that card.
+  const openCard = (id: number) => {
+    changeView("book");
+    setOpenId(id);
+  };
+  useEffect(() => {
+    if (view === "book" && openId !== null) {
+      document.getElementById(`c${openId}`)?.scrollIntoView({ block: "start" });
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-shot jump
+      setOpenId(null);
+    }
+  }, [view, openId]);
 
   const saveFields = useCallback(
     (n: number) => (fields: Partial<ProgressRow>) => save(n, fields),
@@ -59,6 +109,7 @@ export default function CardBook() {
         </p>
       )}
 
+      <ViewToggle view={view} onChange={changeView} />
       <FilterBar filters={filters} onChange={changeFilters} shown={visible.length} total={cards.length} />
 
       {visible.length === 0 && (
@@ -70,7 +121,25 @@ export default function CardBook() {
         </p>
       )}
 
-      {pages.map((page) => {
+      {view === "list" &&
+        pages.map((page) => {
+          const pageCards = visible.filter((c) => c.page === page.id);
+          if (!pageCards.length) return null;
+          return (
+            <section key={page.id} aria-labelledby={`list-${page.id}`} className="mb-6">
+              <h2 id={`list-${page.id}`} className="mt-5 mb-2 font-script text-3xl leading-tight">
+                <span className="swoosh">{page.heading}</span>
+              </h2>
+              <ul className="space-y-2">
+                {pageCards.map((card) => (
+                  <CardRow key={card.id} card={card} row={rows[card.id]} onOpen={() => openCard(card.id)} />
+                ))}
+              </ul>
+            </section>
+          );
+        })}
+
+      {view === "book" && pages.map((page) => {
         const pageCards = visible.filter((c) => c.page === page.id);
         if (!pageCards.length) return null;
         return (
