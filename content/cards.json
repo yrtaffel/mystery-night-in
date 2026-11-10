@@ -98,7 +98,7 @@
     },
     {
       "page": "made-with-love",
-      "title": "GLOVES NOT ALLOWED",
+      "title": "DON'T GET CAUGHT RED-HANDED",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "45 MIN",
@@ -113,7 +113,7 @@
     },
     {
       "page": "made-with-love",
-      "title": "POSTCARD LOVE",
+      "title": "POSTAL LOVE",
       "cost": "$0–5",
       "time": "ANYTIME",
       "duration": "30 MIN",
@@ -239,7 +239,7 @@
         "art",
         "online"
       ],
-      "instructions": "Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!",
+      "instructions": "Open Canva and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!",
       "link": "https://www.canva.com",
       "id": 4
     },
@@ -567,7 +567,7 @@
       "time": "DAYTIME",
       "duration": "45 MIN",
       "spoons": 4,
-      "brains": 1,
+      "brains": 2,
       "icons": [
         "solo",
         "learn",
@@ -587,7 +587,7 @@
       "icons": [
         "solo"
       ],
-      "instructions": "Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.",
+      "instructions": "Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. On a roll? Write a few more! Send them or keep them, whatever feels right.",
       "id": 34
     },
     {

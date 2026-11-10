@@ -25,11 +25,11 @@ Link: https://thisissand.com
 $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 💕🎨📚  
 Pick a beginner origami tutorial and learn it together. No special paper required; regular printer paper works fine. Crumpled first tries are totally allowed. Having fun? Pick another tutorial and keep folding!
 
-**5 | GLOVES NOT ALLOWED**  
+**5 | DON'T GET CAUGHT RED-HANDED**  
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄🥄 · 🧠🧠 · 💕🎨  
 Have a finger painting party! No brushes allowed. Grab any paint or art supplies you have on hand and make a painting using just your fingers. Keep paper towels close. Optional: paint the same scene, or each do your own thing and compare at the end.
 
-**6 | POSTCARD LOVE**  
+**6 | POSTAL LOVE**  
 $ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄🥄🥄 · 🧠🧠 · 💕🎨  
 Make a little art piece for each other: postcard-sized, or go bigger with an 8.5×11 sheet folded in thirds. A 4×6 piece of cardstock works great for a postcard. Write a short note on the back, stamp it, and actually mail it!
 
@@ -62,7 +62,7 @@ Link: https://skribbl.io
 
 **12 | POSTER CONTEST**  
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠🧠 · 💕🎲🎨🌐  
-Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!
+Open Canva and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!
 Link: https://www.canva.com
 
 **13 | PUZZLE MASTER**  
@@ -166,7 +166,7 @@ $ FREE · ⏰ DAYTIME · ⏳ 20 MIN · 🥄🥄🥄 · 🧠 · 🧖‍♀️☀�
 Leave your phone at home and take a leisurely stroll. Find 3 small beautiful things: a leaf, a pebble, anything that catches your eye. Bring them home and snap a photo. Digital variation: put your phone on Do Not Disturb and take 3 beautiful photos instead of collecting things.
 
 **33 | JUDGE A BOOK BY ITS COVER**  
-$ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄🥄🥄 · 🧠 · 🧖‍♀️📚☀️  
+$ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄🥄🥄 · 🧠🧠 · 🧖‍♀️📚☀️  
 Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.
 
 ---
@@ -175,7 +175,7 @@ Go to the library and pick a book only by its cover. No reading the back! Not yo
 
 **34 | THANK YOU, GOOD NIGHT**  
 $ $0–1 · ⏰ ANYTIME · ⏳ 15 MIN · 🥄🥄 · 🧠🧠 · 🧖‍♀️  
-Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.
+Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. On a roll? Write a few more! Send them or keep them, whatever feels right.
 
 **35 | THE JOY LIST**  
 $ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠🧠 · 🧖‍♀️  
