@@ -206,7 +206,7 @@ export default function ScratchSquare({ card, revealed, onReveal }: Props) {
           {card.number} | {card.title}
         </p>
         <p className="mt-3 text-sm text-ink-soft">
-          Once you scratch it, it stays revealed. Aim to finish it within a week, but no
+          Once you scratch it, it stays revealed. You can aim to finish it within a week, but no
           pressure ever. This is your game, so you make the rules!
         </p>
         <div className="mt-5 flex flex-col gap-2">

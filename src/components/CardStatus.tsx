@@ -6,15 +6,20 @@ import { daysLeft, type ProgressRow } from "@/lib/progress";
 const CHEERS = [
   "Yay! Hope you enjoyed that one!",
   "Go you!",
-  "Look at you go!",
   "So glad you did this one!",
   "Another one done!",
   "Woohoo!",
   "Love that you did this!",
   "Hope that was fun!",
   "Yesss, nicely done!",
-  "Proud of you!",
+  "Hope this makes reality a bit easier to get back to!",
+  "Yay!!",
+  "You're amazing!",
 ];
+
+// Cards completed during this visit. The cheer only shows for these;
+// next time she opens the site, completed cards just say "Adventure complete".
+const cheeredThisVisit = new Set<number>();
 
 function cheerFor(cardNumber: number, completedAt: string) {
   let hash = cardNumber;
@@ -33,9 +38,12 @@ export default function CardStatus({ row, onComplete, onUndo }: Props) {
   if (!row?.scratched_at) return null;
 
   if (row.completed_at) {
+    const cheer = cheeredThisVisit.has(row.card_number);
     return (
       <div className="mt-2 text-xs">
-        <p className="font-medium text-lavender-deep">{cheerFor(row.card_number, row.completed_at)}</p>
+        <p className={cheer ? "font-medium text-lavender-deep" : "font-title tracking-wide"}>
+          {cheer ? cheerFor(row.card_number, row.completed_at) : "✓ Adventure complete"}
+        </p>
         <button type="button" onClick={onUndo} className="mt-0.5 text-[11px] text-ink-soft underline">
           undo
         </button>
@@ -52,7 +60,10 @@ export default function CardStatus({ row, onComplete, onUndo }: Props) {
       <p className="font-title text-xs tracking-wide">⏳ {message}</p>
       <button
         type="button"
-        onClick={onComplete}
+        onClick={() => {
+          cheeredThisVisit.add(row.card_number);
+          onComplete();
+        }}
         className="rounded-full bg-lavender-deep px-3 py-1.5 text-xs font-semibold text-white"
       >
         Adventure complete! 🎉
