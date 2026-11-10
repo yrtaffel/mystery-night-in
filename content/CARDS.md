@@ -9,7 +9,7 @@ _Generated from `content/cards.json`. Edit the JSON, then run `node scripts/card
 ## Made with love
 
 **1 | PORTRAIT SWAP**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨🌐  
+$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 💕🎨🌐  
 Use an AI image tool to make a portrait of your adventure buddy while they make one of you. Get it as accurate as you can, and sneak in as many Easter eggs as possible: favorite foods, hobbies, inside jokes. Then do a big reveal and see how many details you each can spot. For a harder challenge, limit yourselves to a set number of prompts.
 
 **2 | SAME PROMPT, DIFFERENT OUTPUT**  
@@ -26,11 +26,11 @@ $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨📚
 Pick a beginner origami tutorial and learn it together. No special paper required; regular printer paper works fine. Crumpled first tries are totally allowed. Having fun? Pick another tutorial and keep folding!
 
 **5 | GLOVES NOT ALLOWED**  
-$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕🎨  
+$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄🥄 · 🧠🧠 · 💕🎨  
 Have a finger painting party! No brushes allowed. Grab any paint or art supplies you have on hand and make a painting using just your fingers. Keep paper towels close. Optional: paint the same scene, or each do your own thing and compare at the end.
 
 **6 | POSTCARD LOVE**  
-$ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄🥄 · 🧠🧠 · 💕🎨  
+$ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄🥄🥄 · 🧠🧠 · 💕🎨  
 Make a little art piece for each other: postcard-sized, or go bigger with an 8.5×11 sheet folded in thirds. A 4×6 piece of cardstock works great for a postcard. Write a short note on the back, stamp it, and actually mail it!
 
 **7 | APP-Y BIRTHDAY**  
@@ -66,7 +66,7 @@ Open Canva (it's free) and each make the most gloriously UNmotivating poster you
 Link: https://www.canva.com
 
 **13 | PUZZLE MASTER**  
-$ FREE · ⏰ ANYTIME · ⏳ 30–60 MIN · 🥄🥄 · 🧠🧠🧠🧠 · 💕🧖‍♀️📚  
+$ FREE · ⏰ ANYTIME · ⏳ 30–60 MIN · 🥄 · 🧠🧠🧠🧠 · 💕🧖‍♀️📚  
 Time to level up your cubing! Grab your 2x2 cube and learn to solve it, with a video tutorial or a friend who knows the moves. Go one step at a time and celebrate your first full solve. Bonus challenge: once the 2x2 clicks, the 4x4 is waiting for you.
 
 **14 | WOULD YOU RATHER**  
@@ -87,16 +87,16 @@ $ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄🥄 · 🧠 · 💕☕🌙
 Two mugs, one cozy night. Mug #1 is a microwave muffin or cupcake (find a recipe online). Mug #2 is a fancy drink: cocoa with whipped cream, iced coffee, exotic tea, etc. Don't forget to clink mugs!
 
 **17 | CHOPPED**  
-$ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄🥄 · 🧠🧠🧠 · 💕☕  
+$ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄🥄🥄 · 🧠🧠🧠 · 💕☕  
 Give each other a tour of your kitchen and pantry, in person or on video. Each of you picks 4 ingredients the other must use in their Shabbos menu this week. After Shabbos, share the results (and any happy accidents).
 
 **18 | FOOD FUSION**  
-$ $5–20 · ⏰ ANYTIME · ⏳ 30 MIN + COOKING · 🥄🥄🥄 · 🧠🧠 · 💕☕🌐  
+$ $5–20 · ⏰ ANYTIME · ⏳ 30 MIN + COOKING · 🥄🥄🥄🥄 · 🧠🧠 · 💕☕🌐  
 Open Google Arts & Culture's food experiment, which blends two cuisines into one new recipe. Pick a recipe for each other, or both make the same one. Swap in kosher ingredients wherever needed.
 Link: https://artsandculture.google.com
 
 **19 | MOCKTAIL MIXOLOGY**  
-$ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 💕☕🌐  
+$ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄🥄 · 🧠🧠 · 💕☕🌐  
 Look up a mocktail recipe, or ask AI to invent one using what's already in your kitchen. Each of you mixes a fancy drink, gives it a name, and garnishes it like a pro. Then cheers and do a taste test! Bonus: turn it into a proper cocktail with some alcohol you have on hand.
 
 ---
@@ -104,19 +104,19 @@ Look up a mocktail recipe, or ask AI to invent one using what's already in your 
 ## Cozy nights in
 
 **20 | ALPHABET MOVIES**  
-$ FREE · ⏰ EVENING · ⏳ 2 HR · 🥄 · 🧠 · 💕🍿🌙  
+$ FREE · ⏰ EVENING · ⏳ 2 HR · 🥄🥄 · 🧠 · 💕🍿🌙  
 Ask Alexa (or any random letter picker) to choose a letter from A to Z. Pick a movie that starts with that letter, press play, and watch together. Popcorn strongly encouraged.
 
 **21 | MANI HAPPY RETURNS**  
-$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄🥄 · 🧠🧠 · 💕💅🌙  
+$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕💅🌙  
 Gather your polish, files, and a cozy towel. Do your nails together, in person or on video, while you chat. The drying time is perfect talking time.
 
 **22 | SHOW AND TELL**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠 · 💕  
+$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠 · 💕  
 Each of you brings something from your childhood for this show-and-tell. It can be a toy you still have, a photo, or something that represents a memory. Then ask each other more about it.
 
 **23 | PLAYLIST PARTY**  
-$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄 · 🧠🧠 · 💕🌐  
+$ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠🧠 · 💕🌐  
 Make a playlist for each other with songs you think they'll like, or that remind you of them. Want a challenge? Make a playlist where the song titles, in order, spell out a secret (or funny) message.
 
 **24 | PARTY TRICK ACADEMY**  
@@ -158,7 +158,7 @@ $ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄 · 🧠 · 🧖‍♀️📚
 Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.
 
 **31 | SOUS VIDE YOURSELF**  
-$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄 · 🧠 · 🧖‍♀️💅🌙  
+$ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄 · 🧠 · 🧖‍♀️💅🌙  
 Run a warm bath with a few drops of essential oil or some bubble bath. Dim the lights, play something calm, and soak. You deserve some self-care tonight.
 
 **32 | BEAUTIFUL THINGS**  
@@ -166,7 +166,7 @@ $ FREE · ⏰ DAYTIME · ⏳ 20 MIN · 🥄🥄🥄 · 🧠 · 🧖‍♀️☀�
 Leave your phone at home and take a leisurely stroll. Find 3 small beautiful things: a leaf, a pebble, anything that catches your eye. Bring them home and snap a photo. Digital variation: put your phone on Do Not Disturb and take 3 beautiful photos instead of collecting things.
 
 **33 | JUDGE A BOOK BY ITS COVER**  
-$ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠 · 🧖‍♀️📚☀️  
+$ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄🥄🥄 · 🧠 · 🧖‍♀️📚☀️  
 Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.
 
 ---
@@ -174,7 +174,7 @@ Go to the library and pick a book only by its cover. No reading the back! Not yo
 ## Just for you
 
 **34 | THANK YOU, GOOD NIGHT**  
-$ $0–1 · ⏰ ANYTIME · ⏳ 15 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
+$ $0–1 · ⏰ ANYTIME · ⏳ 15 MIN · 🥄🥄 · 🧠🧠 · 🧖‍♀️  
 Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.
 
 **35 | THE JOY LIST**  

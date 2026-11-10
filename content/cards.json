@@ -37,7 +37,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 2,
       "icons": [
         "together",
@@ -102,7 +102,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "45 MIN",
-      "spoons": 2,
+      "spoons": 3,
       "brains": 2,
       "icons": [
         "together",
@@ -117,7 +117,7 @@
       "cost": "$0–5",
       "time": "ANYTIME",
       "duration": "30 MIN",
-      "spoons": 3,
+      "spoons": 4,
       "brains": 2,
       "icons": [
         "together",
@@ -249,7 +249,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30–60 MIN",
-      "spoons": 2,
+      "spoons": 1,
       "brains": 4,
       "icons": [
         "together",
@@ -314,7 +314,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "20 MIN",
-      "spoons": 2,
+      "spoons": 3,
       "brains": 3,
       "icons": [
         "together",
@@ -329,7 +329,7 @@
       "cost": "$5–20",
       "time": "ANYTIME",
       "duration": "30 MIN + COOKING",
-      "spoons": 3,
+      "spoons": 4,
       "brains": 2,
       "icons": [
         "together",
@@ -347,7 +347,7 @@
       "cost": "$0–5",
       "time": "ANYTIME",
       "duration": "30 MIN",
-      "spoons": 2,
+      "spoons": 3,
       "brains": 2,
       "icons": [
         "together",
@@ -362,7 +362,7 @@
       "cost": "FREE",
       "time": "EVENING",
       "duration": "2 HR",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 1,
       "icons": [
         "together",
@@ -378,7 +378,7 @@
       "cost": "$0–5",
       "time": "EVENING",
       "duration": "45 MIN",
-      "spoons": 3,
+      "spoons": 2,
       "brains": 2,
       "icons": [
         "together",
@@ -394,7 +394,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 1,
       "icons": [
         "together"
@@ -408,7 +408,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "45 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 2,
       "icons": [
         "together",
@@ -535,7 +535,7 @@
       "cost": "$0–5",
       "time": "EVENING",
       "duration": "45 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 1,
       "icons": [
         "solo",
@@ -566,7 +566,7 @@
       "cost": "FREE",
       "time": "DAYTIME",
       "duration": "45 MIN",
-      "spoons": 2,
+      "spoons": 4,
       "brains": 1,
       "icons": [
         "solo",
@@ -582,7 +582,7 @@
       "cost": "$0–1",
       "time": "ANYTIME",
       "duration": "15 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 2,
       "icons": [
         "solo"
