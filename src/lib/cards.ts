@@ -2,7 +2,7 @@ import data from "../../content/cards.json";
 
 export type IconKey =
   | "together" | "solo" | "art" | "game" | "kitchen" | "shopping"
-  | "learn" | "pampering" | "movie" | "daytime" | "evening";
+  | "learn" | "pampering" | "movie" | "online" | "daytime" | "evening";
 
 export type Card = {
   id: number; // permanent; progress is saved under this, so it never changes

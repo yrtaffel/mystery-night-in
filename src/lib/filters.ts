@@ -19,7 +19,7 @@ export const EMPTY: Filters = {
   who: [], types: [], maxSpoons: null, maxBrains: null, when: [], maxMinutes: null, freeOnly: false, status: [],
 };
 
-export const TYPE_KEYS: IconKey[] = ["art", "game", "kitchen", "shopping", "learn", "pampering", "movie"];
+export const TYPE_KEYS: IconKey[] = ["art", "game", "kitchen", "shopping", "learn", "pampering", "movie", "online"];
 export const MINUTE_CHOICES = [20, 30, 45, 60];
 
 /** "30–45 MIN" → 45, "1 HR" → 60, "40 MIN + CHECK-INS" → 40. */
