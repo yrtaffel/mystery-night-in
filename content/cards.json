@@ -10,8 +10,20 @@
       "heading": "Game night, any night"
     },
     {
+      "id": "cooking",
+      "heading": "Cooking up fun"
+    },
+    {
       "id": "cozy-nights-in",
       "heading": "Cozy nights in"
+    },
+    {
+      "id": "treat-yourself",
+      "heading": "Treat yourself"
+    },
+    {
+      "id": "slow-down",
+      "heading": "Slow down"
     },
     {
       "id": "just-for-you",
@@ -49,39 +61,6 @@
       ],
       "instructions": "Pick one short art tutorial (10–20 min) and follow it at the same time as your adventure buddy, side by side or on video. Then hold up your paintings. Same steps, two totally different results. That's the magic.",
       "id": 2
-    },
-    {
-      "page": "made-with-love",
-      "title": "ONE PHOTO, THREE COLORS",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "1 HR",
-      "spoons": 2,
-      "brains": 3,
-      "icons": [
-        "together",
-        "art"
-      ],
-      "instructions": "Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything.",
-      "cut": true,
-      "id": 3
-    },
-    {
-      "page": "made-with-love",
-      "title": "POSTER CONTEST",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "45 MIN",
-      "spoons": 2,
-      "brains": 3,
-      "icons": [
-        "together",
-        "game",
-        "art"
-      ],
-      "instructions": "Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!",
-      "link": "https://www.canva.com",
-      "id": 4
     },
     {
       "page": "made-with-love",
@@ -132,40 +111,6 @@
     },
     {
       "page": "made-with-love",
-      "title": "CYBER PLANTS",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "40 MIN + CHECK-INS",
-      "spoons": 1,
-      "brains": 2,
-      "icons": [
-        "together",
-        "game",
-        "learn"
-      ],
-      "instructions": "Each of you builds a little terrarium on Glass Jar Garden and names your plants. Check on each other's gardens over the next few weeks to see how they're growing.",
-      "link": "https://glassjar.garden/",
-      "id": 8
-    },
-    {
-      "page": "made-with-love",
-      "title": "BLIND DRAWING",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "30 MIN",
-      "spoons": 1,
-      "brains": 2,
-      "icons": [
-        "together",
-        "art",
-        "game"
-      ],
-      "instructions": "One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles.",
-      "cut": true,
-      "id": 9
-    },
-    {
-      "page": "made-with-love",
       "title": "POSTCARD LOVE",
       "cost": "$0–5",
       "time": "ANYTIME",
@@ -178,22 +123,6 @@
       ],
       "instructions": "Make a little art piece for each other: postcard-sized, or go bigger with an 8.5×11 sheet folded in thirds. A 4×6 piece of cardstock works great for a postcard. Write a short note on the back, stamp it, and actually mail it!",
       "id": 10
-    },
-    {
-      "page": "game-night",
-      "title": "WORD CHAIN",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "20 MIN",
-      "spoons": 1,
-      "brains": 2,
-      "icons": [
-        "together",
-        "game"
-      ],
-      "instructions": "Pick a category: foods, places, animals, anything. Each answer starts with the last letter of the one before (Apple → Eggplant → Tomato…). Stuck for 10 seconds? Point to the other side.",
-      "id": 11,
-      "cut": true
     },
     {
       "page": "game-night",
@@ -274,7 +203,24 @@
       "id": 16
     },
     {
-      "page": "cozy-nights-in",
+      "page": "game-night",
+      "title": "POSTER CONTEST",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "game",
+        "art"
+      ],
+      "instructions": "Open Canva (it's free) and each make the most gloriously UNmotivating poster you can. Optional: send both to a third person to judge without saying whose is whose. Bonus: print one (or both) for your office!",
+      "link": "https://www.canva.com",
+      "id": 4
+    },
+    {
+      "page": "cooking",
       "title": "MUG NIGHT",
       "cost": "$0–5",
       "time": "EVENING",
@@ -290,7 +236,7 @@
       "id": 17
     },
     {
-      "page": "cozy-nights-in",
+      "page": "cooking",
       "title": "CHOPPED",
       "cost": "FREE",
       "time": "ANYTIME",
@@ -305,7 +251,7 @@
       "id": 18
     },
     {
-      "page": "cozy-nights-in",
+      "page": "cooking",
       "title": "FOOD FUSION",
       "cost": "$5–20",
       "time": "ANYTIME",
@@ -322,49 +268,19 @@
     },
     {
       "page": "cozy-nights-in",
-      "title": "TREAT-YOURSELF SPREE",
-      "cost": "~$10",
-      "time": "ANYTIME",
-      "duration": "30 MIN",
-      "spoons": 2,
-      "brains": 3,
-      "icons": [
-        "together",
-        "shopping"
-      ],
-      "instructions": "Agree on the same small budget. Each of you shops online at the same time for treats just for you. Then do a dramatic reveal, one item at a time.",
-      "id": 20
-    },
-    {
-      "page": "cozy-nights-in",
-      "title": "SCREEN-SHARE SHOPPING",
-      "cost": "FREE TO BROWSE",
-      "time": "ANYTIME",
-      "duration": "45 MIN",
+      "title": "ALPHABET MOVIES",
+      "cost": "FREE",
+      "time": "EVENING",
+      "duration": "2 HR",
       "spoons": 1,
       "brains": 1,
       "icons": [
         "together",
-        "shopping"
+        "movie",
+        "evening"
       ],
-      "instructions": "Share screens and browse together, like a mall trip from the couch. Hunt for something specific or build dream carts. Buying is optional; opinions are required.",
-      "id": 21,
-      "cut": true
-    },
-    {
-      "page": "cozy-nights-in",
-      "title": "PARTY TRICK ACADEMY",
-      "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "30 MIN",
-      "spoons": 2,
-      "brains": 3,
-      "icons": [
-        "together",
-        "learn"
-      ],
-      "instructions": "Learn one simple trick together: a coin trick, a card trick, a tongue twister. Practice side by side, in person or on video. Then each of you gives a grand performance. Applause required.",
-      "id": 22
+      "instructions": "Ask Alexa (or any random letter picker) to choose a letter from A to Z. Pick a movie that starts with that letter, press play, and watch together. Popcorn strongly encouraged.",
+      "id": 24
     },
     {
       "page": "cozy-nights-in",
@@ -381,22 +297,6 @@
       ],
       "instructions": "Gather your polish, files, and a cozy towel. Do your nails together, in person or on video, while you chat. The drying time is perfect talking time.",
       "id": 23
-    },
-    {
-      "page": "cozy-nights-in",
-      "title": "ALPHABET MOVIES",
-      "cost": "FREE",
-      "time": "EVENING",
-      "duration": "2 HR",
-      "spoons": 1,
-      "brains": 1,
-      "icons": [
-        "together",
-        "movie",
-        "evening"
-      ],
-      "instructions": "Ask Alexa (or any random letter picker) to choose a letter from A to Z. Pick a movie that starts with that letter, press play, and watch together. Popcorn strongly encouraged.",
-      "id": 24
     },
     {
       "page": "cozy-nights-in",
@@ -428,38 +328,53 @@
     },
     {
       "page": "cozy-nights-in",
-      "title": "MUSEUM HOPPING",
+      "title": "PARTY TRICK ACADEMY",
       "cost": "FREE",
       "time": "ANYTIME",
-      "duration": "45 MIN",
-      "spoons": 1,
-      "brains": 2,
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 3,
       "icons": [
         "together",
         "learn"
       ],
-      "instructions": "Pick a museum on Google Arts & Culture and tour it together over screen-share. Each of you chooses a \"favorite piece of the day\" and says why. Comfy shoes not needed.",
-      "link": "https://artsandculture.google.com",
-      "id": 27,
-      "cut": true
+      "instructions": "Learn one simple trick together: a coin trick, a card trick, a tongue twister. Practice side by side, in person or on video. Then each of you gives a grand performance. Applause required.",
+      "id": 22
     },
     {
-      "page": "just-for-you",
-      "title": "BOOK NOOK",
+      "page": "treat-yourself",
+      "title": "TREAT-YOURSELF SPREE",
+      "cost": "~$10",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "shopping"
+      ],
+      "instructions": "Agree on the same small budget. Each of you shops online at the same time for treats just for you. Then do a dramatic reveal, one item at a time.",
+      "id": 20
+    },
+    {
+      "page": "treat-yourself",
+      "title": "CYBER PLANTS",
       "cost": "FREE",
       "time": "ANYTIME",
-      "duration": "1 HR",
+      "duration": "40 MIN + CHECK-INS",
       "spoons": 1,
-      "brains": 1,
+      "brains": 2,
       "icons": [
-        "solo",
+        "together",
+        "game",
         "learn"
       ],
-      "instructions": "Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.",
-      "id": 29
+      "instructions": "Each of you builds a little terrarium on Glass Jar Garden and names your plants. Check on each other's gardens over the next few weeks to see how they're growing.",
+      "link": "https://glassjar.garden/",
+      "id": 8
     },
     {
-      "page": "just-for-you",
+      "page": "treat-yourself",
       "title": "HOBBY HUNT",
       "cost": "~$20",
       "time": "DAYTIME",
@@ -475,7 +390,22 @@
       "id": 30
     },
     {
-      "page": "just-for-you",
+      "page": "slow-down",
+      "title": "BOOK NOOK",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "1 HR",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "solo",
+        "learn"
+      ],
+      "instructions": "Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.",
+      "id": 29
+    },
+    {
+      "page": "slow-down",
       "title": "SOUS VIDE YOURSELF",
       "cost": "$0–5",
       "time": "EVENING",
@@ -491,7 +421,7 @@
       "id": 31
     },
     {
-      "page": "just-for-you",
+      "page": "slow-down",
       "title": "BEAUTIFUL THINGS",
       "cost": "FREE",
       "time": "DAYTIME",
@@ -506,20 +436,20 @@
       "id": 32
     },
     {
-      "page": "just-for-you",
-      "title": "PAINT TODAY IN THREE COLORS",
+      "page": "slow-down",
+      "title": "JUDGE A BOOK BY ITS COVER",
       "cost": "FREE",
-      "time": "ANYTIME",
-      "duration": "30 MIN",
+      "time": "DAYTIME",
+      "duration": "45 MIN",
       "spoons": 2,
-      "brains": 2,
+      "brains": 1,
       "icons": [
         "solo",
-        "art"
+        "learn",
+        "daytime"
       ],
-      "instructions": "Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day.",
-      "id": 33,
-      "cut": true
+      "instructions": "Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.",
+      "id": 37
     },
     {
       "page": "just-for-you",
@@ -551,6 +481,118 @@
     },
     {
       "page": "just-for-you",
+      "title": "DEAR ME",
+      "cost": "$0–5",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "solo"
+      ],
+      "instructions": "Write yourself a letter to open in one year (maybe on your next birthday?). What's happening now? What do you hope for? Seal it up, write \"Open on ___,\" and hide it somewhere safe where you'll remember it. Digital variation: write it as an email and schedule it to send to yourself a year from now.",
+      "id": 28
+    },
+    {
+      "page": "made-with-love",
+      "title": "ONE PHOTO, THREE COLORS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "1 HR",
+      "spoons": 2,
+      "brains": 3,
+      "icons": [
+        "together",
+        "art"
+      ],
+      "instructions": "Choose one photo you both love. Each of you picks only 3 paint colors. Paint the same scene and see how your color choices change everything.",
+      "cut": true,
+      "id": 3
+    },
+    {
+      "page": "made-with-love",
+      "title": "BLIND DRAWING",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "art",
+        "game"
+      ],
+      "instructions": "One of you describes a picture, but you can't say what it is! The other draws only from the description. Reveal and compare, then swap roles.",
+      "cut": true,
+      "id": 9
+    },
+    {
+      "page": "game-night",
+      "title": "WORD CHAIN",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game"
+      ],
+      "instructions": "Pick a category: foods, places, animals, anything. Each answer starts with the last letter of the one before (Apple → Eggplant → Tomato…). Stuck for 10 seconds? Point to the other side.",
+      "id": 11,
+      "cut": true
+    },
+    {
+      "page": "cozy-nights-in",
+      "title": "SCREEN-SHARE SHOPPING",
+      "cost": "FREE TO BROWSE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 1,
+      "icons": [
+        "together",
+        "shopping"
+      ],
+      "instructions": "Share screens and browse together, like a mall trip from the couch. Hunt for something specific or build dream carts. Buying is optional; opinions are required.",
+      "id": 21,
+      "cut": true
+    },
+    {
+      "page": "cozy-nights-in",
+      "title": "MUSEUM HOPPING",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "learn"
+      ],
+      "instructions": "Pick a museum on Google Arts & Culture and tour it together over screen-share. Each of you chooses a \"favorite piece of the day\" and says why. Comfy shoes not needed.",
+      "link": "https://artsandculture.google.com",
+      "id": 27,
+      "cut": true
+    },
+    {
+      "page": "just-for-you",
+      "title": "PAINT TODAY IN THREE COLORS",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "solo",
+        "art"
+      ],
+      "instructions": "Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day.",
+      "id": 33,
+      "cut": true
+    },
+    {
+      "page": "just-for-you",
       "title": "SUNSET & TEA",
       "cost": "FREE",
       "time": "EVENING",
@@ -565,36 +607,6 @@
       "instructions": "Look up today's sunset time. Brew a cup of tea, find a window or step outside, and watch the sky change.",
       "id": 36,
       "cut": true
-    },
-    {
-      "page": "just-for-you",
-      "title": "JUDGE A BOOK BY ITS COVER",
-      "cost": "FREE",
-      "time": "DAYTIME",
-      "duration": "45 MIN",
-      "spoons": 2,
-      "brains": 1,
-      "icons": [
-        "solo",
-        "learn",
-        "daytime"
-      ],
-      "instructions": "Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.",
-      "id": 37
-    },
-    {
-      "page": "just-for-you",
-      "title": "DEAR ME",
-      "cost": "$0–5",
-      "time": "ANYTIME",
-      "duration": "30 MIN",
-      "spoons": 2,
-      "brains": 3,
-      "icons": [
-        "solo"
-      ],
-      "instructions": "Write yourself a letter to open in one year (maybe on your next birthday?). What's happening now? What do you hope for? Seal it up, write \"Open on ___,\" and hide it somewhere safe where you'll remember it. Digital variation: write it as an email and schedule it to send to yourself a year from now.",
-      "id": 28
     }
   ]
 }
