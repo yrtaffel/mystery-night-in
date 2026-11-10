@@ -53,7 +53,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "1 HR",
-      "spoons": 2,
+      "spoons": 3,
       "brains": 2,
       "icons": [
         "together",
@@ -86,7 +86,7 @@
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30 MIN",
-      "spoons": 1,
+      "spoons": 2,
       "brains": 2,
       "icons": [
         "together",
@@ -250,7 +250,7 @@
       "time": "ANYTIME",
       "duration": "30–60 MIN",
       "spoons": 1,
-      "brains": 4,
+      "brains": 3,
       "icons": [
         "together",
         "solo",

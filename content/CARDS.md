@@ -13,7 +13,7 @@ $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 💕🎨🌐
 Use an AI image tool to make a portrait of your adventure buddy while they make one of you. Get it as accurate as you can, and sneak in as many Easter eggs as possible: favorite foods, hobbies, inside jokes. Then do a big reveal and see how many details you each can spot. For a harder challenge, limit yourselves to a set number of prompts.
 
 **2 | SAME PROMPT, DIFFERENT OUTPUT**  
-$ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄🥄 · 🧠🧠 · 💕🎨📚  
+$ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄🥄🥄 · 🧠🧠 · 💕🎨📚  
 Pick one short art tutorial (10–20 min) and follow it at the same time as your adventure buddy, side by side or on video. Then hold up your paintings. Same steps, two totally different results. That's the magic.
 
 **3 | CLEANEST ART EVER**  
@@ -22,7 +22,7 @@ Open a free online sand-art site (thisissand.com is a great one) and pour colorf
 Link: https://thisissand.com
 
 **4 | FOLD IT UP**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎨📚  
+$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 💕🎨📚  
 Pick a beginner origami tutorial and learn it together. No special paper required; regular printer paper works fine. Crumpled first tries are totally allowed. Having fun? Pick another tutorial and keep folding!
 
 **5 | GLOVES NOT ALLOWED**  
@@ -66,7 +66,7 @@ Open Canva (it's free) and each make the most gloriously UNmotivating poster you
 Link: https://www.canva.com
 
 **13 | PUZZLE MASTER**  
-$ FREE · ⏰ ANYTIME · ⏳ 30–60 MIN · 🥄 · 🧠🧠🧠🧠 · 💕🧖‍♀️📚  
+$ FREE · ⏰ ANYTIME · ⏳ 30–60 MIN · 🥄 · 🧠🧠🧠 · 💕🧖‍♀️📚  
 Time to level up your cubing! Grab your 2x2 cube and learn to solve it, with a video tutorial or a friend who knows the moves. Go one step at a time and celebrate your first full solve. Bonus challenge: once the 2x2 clicks, the 4x4 is waiting for you.
 
 **14 | WOULD YOU RATHER**  
