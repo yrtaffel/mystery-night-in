@@ -6,25 +6,13 @@ import {
   apply, canVoteForSelf, dealTiles, host, joinTiles, makeId, moreTiles, newGame, voteCounts,
   type Action, type GameState,
 } from "@/lib/magnets";
-import { connect, type Msg, type Transport } from "@/lib/magnetsTransport";
+import { connect, type Transport } from "@/lib/magnetsTransport";
+import { Invite, NAME_KEY, NameForm, read, write } from "./RoomBits";
 
-const NAME_KEY = "magnets-name";
+type Msg = { kind: "action"; action: Action } | { kind: "state"; state: GameState } | { kind: "hello" };
+
 const tilt = (i: number) => ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "rotate-0"][i % 5];
 
-function read(store: "local" | "session", key: string) {
-  try {
-    return (store === "local" ? localStorage : sessionStorage).getItem(key);
-  } catch {
-    return null;
-  }
-}
-function write(store: "local" | "session", key: string, value: string) {
-  try {
-    (store === "local" ? localStorage : sessionStorage).setItem(key, value);
-  } catch {
-    // private browsing: fine
-  }
-}
 
 function Tile({ word, onClick, i, label }: { word: string; onClick: () => void; i: number; label: string }) {
   return (
@@ -47,37 +35,6 @@ function Answer({ words }: { words: string[] }) {
   );
 }
 
-function Invite({ code }: { code: string }) {
-  const [copied, setCopied] = useState(false);
-  const link = typeof window === "undefined" ? "" : `${window.location.origin}/play/${code}`;
-  return (
-    <div className="rounded-2xl bg-white/60 p-4 text-center shadow-sm">
-      <p className="font-title text-xs tracking-[0.2em] text-ink-soft uppercase">Room code</p>
-      <p className="font-title text-4xl font-semibold tracking-[0.2em]">{code}</p>
-      <p className="mt-1 text-xs text-ink-soft">Friends can join with this link. No account needed!</p>
-      <div className="mt-3 flex justify-center gap-2">
-        <button type="button" className="rounded-full bg-lavender-deep px-4 py-2 text-sm font-semibold text-white"
-          onClick={async () => {
-            try {
-              await navigator.clipboard.writeText(link);
-              setCopied(true);
-              setTimeout(() => setCopied(false), 2000);
-            } catch {
-              window.prompt("Copy this link:", link);
-            }
-          }}>
-          {copied ? "Copied! ✓" : "Copy invite link"}
-        </button>
-        {typeof navigator !== "undefined" && "share" in navigator && (
-          <button type="button" className="rounded-full border border-line bg-white px-4 py-2 text-sm"
-            onClick={() => navigator.share({ title: "Fridge Magnets", text: "Come play Fridge Magnets with me!", url: link }).catch(() => {})}>
-            Share
-          </button>
-        )}
-      </div>
-    </div>
-  );
-}
 
 const TIMER_CHOICES = [0, 60, 120, 180];
 
@@ -110,20 +67,6 @@ function Countdown({ secondsLeft }: { secondsLeft: number }) {
   );
 }
 
-function NameForm({ onDone }: { onDone: (name: string) => void }) {
-  const [name, setName] = useState(read("local", NAME_KEY) ?? "");
-  return (
-    <form className="mx-auto flex max-w-xs flex-col gap-3"
-      onSubmit={(e) => { e.preventDefault(); if (name.trim()) onDone(name.trim()); }}>
-      <label htmlFor="player-name" className="text-center">What should we call you?</label>
-      <input id="player-name" value={name} onChange={(e) => setName(e.target.value)} maxLength={20} autoComplete="nickname"
-        className="rounded-lg border border-line bg-white/80 px-3 py-3 text-center text-base" />
-      <button disabled={!name.trim()} className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
-        Join the game
-      </button>
-    </form>
-  );
-}
 
 export default function MagnetsGame() {
   const { code: rawCode } = useParams<{ code: string }>();
@@ -133,7 +76,7 @@ export default function MagnetsGame() {
   const [needName, setNeedName] = useState(false);
   const [state, setState] = useState<GameState | null>(null);
   const [connected, setConnected] = useState(false);
-  const transport = useRef<Transport | null>(null);
+  const transport = useRef<Transport<Msg> | null>(null);
 
   // Who am I? (Host info is saved by the "Start a game" page.)
   useEffect(() => {
@@ -160,8 +103,8 @@ export default function MagnetsGame() {
   // Connect to the room.
   useEffect(() => {
     if (!me) return;
-    const t = connect(
-      code,
+    const t = connect<Msg>(
+      `magnets-${code}`,
       (m: Msg) => {
         if (me.isHost) {
           if (m.kind === "action") setState((s) => (s ? apply(s, m.action) : s));
@@ -292,7 +235,7 @@ export default function MagnetsGame() {
     <div>
       {state.phase === "lobby" && (
         <>
-          <Invite code={code} />
+          <Invite code={code} path="play" title="Fridge Magnets" />
           <div className="mt-6 rounded-2xl bg-white/60 p-4 shadow-sm">
             <p className="mb-2 font-title text-xs tracking-[0.2em] text-ink-soft uppercase">Players</p>
             <ul className="space-y-1">

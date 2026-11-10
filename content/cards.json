@@ -237,6 +237,22 @@
       "id": 38
     },
     {
+      "id": 39,
+      "page": "game-night",
+      "title": "WOULD YOU RATHER",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "20 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game"
+      ],
+      "feature": "would-you-rather",
+      "instructions": "Start a game on the Would You Rather page and send your adventure buddy the invite link. You'll each get two choices and have to pick one. No skipping! Then see who picked what, and be ready to defend your answers."
+    },
+    {
       "page": "cooking",
       "title": "MUG NIGHT",
       "cost": "$0–5",
@@ -282,6 +298,21 @@
       "instructions": "Open Google Arts & Culture's food experiment, which blends two cuisines into one new recipe. Pick a recipe for each other, or both make the same one. Swap in kosher ingredients wherever needed.",
       "link": "https://artsandculture.google.com",
       "id": 19
+    },
+    {
+      "id": 40,
+      "page": "cooking",
+      "title": "MOCKTAIL MIXOLOGY",
+      "cost": "$0–5",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 2,
+      "brains": 2,
+      "icons": [
+        "together",
+        "kitchen"
+      ],
+      "instructions": "Look up a mocktail recipe, or ask AI to invent one using what's already in your kitchen. Each of you mixes a fancy drink, gives it a name, and garnishes it like a pro. Then cheers and do a taste test! Bonus: turn it into a proper cocktail with some alcohol you have on hand."
     },
     {
       "page": "cozy-nights-in",
@@ -357,6 +388,21 @@
       ],
       "instructions": "Learn one simple trick together: a coin trick, a card trick, a tongue twister. Practice side by side, in person or on video. Then each of you gives a grand performance. Applause required.",
       "id": 22
+    },
+    {
+      "id": 41,
+      "page": "cozy-nights-in",
+      "title": "FORCING PARTY",
+      "cost": "FREE",
+      "time": "DAYTIME",
+      "duration": "1 HR",
+      "spoons": 3,
+      "brains": 3,
+      "icons": [
+        "together",
+        "daytime"
+      ],
+      "instructions": "Each of you picks one task you've been putting off: that email, that drawer, that form. Get together, in person or on video, say it out loud, set a timer for 25 minutes, and work side by side. Cheer each other on at the end, no matter how far you got."
     },
     {
       "page": "treat-yourself",

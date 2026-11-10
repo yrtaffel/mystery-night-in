@@ -1,18 +1,14 @@
 "use client";
 
 import { createClient } from "@/lib/supabase/client";
-import type { Action, GameState } from "@/lib/magnets";
-
-export type Msg = { kind: "action"; action: Action } | { kind: "state"; state: GameState } | { kind: "hello" };
-
-export type Transport = { send: (msg: Msg) => void; close: () => void };
+export type Transport<M = unknown> = { send: (msg: M) => void; close: () => void };
 
 /**
- * Live connection for one game room. Uses Supabase Realtime broadcast,
+ * Live connection for one game room (Fridge Magnets, Would You Rather). Uses Supabase Realtime broadcast,
  * so guests don't need an account. (In local development, `?localtest`
  * uses the browser's own tab-to-tab channel instead, for testing.)
  */
-export function connect(code: string, onMsg: (m: Msg) => void, onReady: () => void): Transport {
+export function connect<M>(room: string, onMsg: (m: M) => void, onReady: () => void): Transport<M> {
   let local = false;
   if (process.env.NODE_ENV === "development") {
     try {
@@ -23,16 +19,16 @@ export function connect(code: string, onMsg: (m: Msg) => void, onReady: () => vo
   }
 
   if (local) {
-    const bc = new BroadcastChannel(`magnets-${code}`);
-    bc.onmessage = (e) => onMsg(e.data as Msg);
+    const bc = new BroadcastChannel(room);
+    bc.onmessage = (e) => onMsg(e.data as M);
     setTimeout(onReady, 0);
     return { send: (m) => bc.postMessage(m), close: () => bc.close() };
   }
 
   const supabase = createClient();
-  const channel = supabase.channel(`magnets-${code}`, { config: { broadcast: { self: false } } });
+  const channel = supabase.channel(room, { config: { broadcast: { self: false } } });
   channel
-    .on("broadcast", { event: "msg" }, ({ payload }) => onMsg(payload as Msg))
+    .on("broadcast", { event: "msg" }, ({ payload }) => onMsg(payload as M))
     .subscribe((status) => {
       if (status === "SUBSCRIBED") onReady();
     });

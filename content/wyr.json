@@ -1,0 +1,252 @@
+{
+ "questions": [
+  {
+   "a": "have a tail",
+   "b": "have an extra eye"
+  },
+  {
+   "a": "only be able to whisper",
+   "b": "only be able to shout"
+  },
+  {
+   "a": "have cholent at every Shabbos meal forever",
+   "b": "never eat cholent again"
+  },
+  {
+   "a": "always know the ending of every movie",
+   "b": "never get to see the last 10 minutes of any movie"
+  },
+  {
+   "a": "have a personal chef",
+   "b": "have a personal cleaner"
+  },
+  {
+   "a": "give up music forever",
+   "b": "give up podcasts and audiobooks forever"
+  },
+  {
+   "a": "always be 10 minutes late",
+   "b": "always be 20 minutes early"
+  },
+  {
+   "a": "fight one horse-sized duck",
+   "b": "fight 100 duck-sized horses"
+  },
+  {
+   "a": "have hands for feet",
+   "b": "have feet for hands"
+  },
+  {
+   "a": "give up coffee forever",
+   "b": "give up chocolate forever"
+  },
+  {
+   "a": "be able to talk to animals",
+   "b": "speak every human language"
+  },
+  {
+   "a": "have a rewind button for your life",
+   "b": "have a pause button for your life"
+  },
+  {
+   "a": "live in a tiny cabin in the woods",
+   "b": "live in a tiny apartment in a big city"
+  },
+  {
+   "a": "have your thoughts show up as captions over your head for a day",
+   "b": "have everyone hear your inner monologue for an hour"
+  },
+  {
+   "a": "never do laundry again",
+   "b": "never wash dishes again"
+  },
+  {
+   "a": "sneeze glitter",
+   "b": "burp bubbles"
+  },
+  {
+   "a": "be famous for something embarrassing",
+   "b": "be unknown for something amazing"
+  },
+  {
+   "a": "have unlimited free flights",
+   "b": "have unlimited free groceries"
+  },
+  {
+   "a": "read minds",
+   "b": "be invisible whenever you want"
+  },
+  {
+   "a": "always have a song stuck in your head",
+   "b": "always have an itch you can't reach"
+  },
+  {
+   "a": "wear pajamas to every wedding forever",
+   "b": "wear a ball gown to the grocery store forever"
+  },
+  {
+   "a": "have a pet dragon the size of a cat",
+   "b": "have a cat the size of a dragon"
+  },
+  {
+   "a": "only eat sweet foods for the rest of your life",
+   "b": "only eat salty foods for the rest of your life"
+  },
+  {
+   "a": "have a robot that cleans",
+   "b": "have a robot that cooks"
+  },
+  {
+   "a": "visit yourself 10 years ago for a day",
+   "b": "visit yourself 10 years from now for a day"
+  },
+  {
+   "a": "sing everything you say",
+   "b": "dance everywhere you walk"
+  },
+  {
+   "a": "lose your phone for a week",
+   "b": "lose your voice for a week"
+  },
+  {
+   "a": "have a secret passage in your house",
+   "b": "have a slide instead of stairs"
+  },
+  {
+   "a": "always know when someone is lying",
+   "b": "always get away with a fib"
+  },
+  {
+   "a": "live where it's always winter",
+   "b": "live where it's always summer"
+  },
+  {
+   "a": "have every group chat on loud forever",
+   "b": "be removed from all of them"
+  },
+  {
+   "a": "have a photographic memory",
+   "b": "be able to forget anything you want"
+  },
+  {
+   "a": "clean for Pesach with a toothbrush",
+   "b": "eat only matzah for a month"
+  },
+  {
+   "a": "be stuck in an elevator with your boss",
+   "b": "be stuck in an elevator with a very chatty toddler"
+  },
+  {
+   "a": "have a rain cloud follow you everywhere",
+   "b": "have a spotlight follow you everywhere"
+  },
+  {
+   "a": "speak only in questions for a day",
+   "b": "speak only in rhymes for a day"
+  },
+  {
+   "a": "give up all streaming services",
+   "b": "give up all social media"
+  },
+  {
+   "a": "be the funniest person in the room",
+   "b": "be the smartest person in the room"
+  },
+  {
+   "a": "have perfect handwriting",
+   "b": "have perfect pitch"
+  },
+  {
+   "a": "have a never-ending supply of challah",
+   "b": "have a never-ending supply of rugelach"
+  },
+  {
+   "a": "fly, but only 3 feet off the ground",
+   "b": "teleport, but only 10 feet at a time"
+  },
+  {
+   "a": "stay in a cozy cabin with no WiFi",
+   "b": "stay in a fancy hotel with terrible WiFi"
+  },
+  {
+   "a": "be an amazing painter",
+   "b": "be an amazing musician"
+  },
+  {
+   "a": "have your house always smell like fresh cookies",
+   "b": "have your house always look perfectly clean"
+  },
+  {
+   "a": "never feel cold again",
+   "b": "never feel hot again"
+  },
+  {
+   "a": "wake up at 5 a.m. feeling amazing",
+   "b": "sleep until noon and still feel tired"
+  },
+  {
+   "a": "get one extra hour every day",
+   "b": "get one extra day every week"
+  },
+  {
+   "a": "be a giant hamster",
+   "b": "be a tiny elephant"
+  },
+  {
+   "a": "have spaghetti for hair",
+   "b": "sweat maple syrup"
+  },
+  {
+   "a": "live in a world without mirrors",
+   "b": "live in a world without clocks"
+  },
+  {
+   "a": "give a speech to 1,000 people",
+   "b": "sing alone at a karaoke night"
+  },
+  {
+   "a": "announce out loud every time you have a snack",
+   "b": "announce out loud every time you go to the bathroom"
+  },
+  {
+   "a": "always say exactly what you're thinking",
+   "b": "never be able to say what you're thinking"
+  },
+  {
+   "a": "be unbeatable at every board game",
+   "b": "be unbeatable at every video game"
+  },
+  {
+   "a": "explore outer space",
+   "b": "explore the deep ocean"
+  },
+  {
+   "a": "have a cat that talks but is rude",
+   "b": "have a silent cat that silently judges you"
+  },
+  {
+   "a": "find $100 on the street once",
+   "b": "find a perfect parking spot every time, forever"
+  },
+  {
+   "a": "wear wet socks forever",
+   "b": "always have a pebble in your shoe"
+  },
+  {
+   "a": "sit next to a crying baby on a 12-hour flight",
+   "b": "sit next to a nonstop talker on a 12-hour flight"
+  },
+  {
+   "a": "eat a spoonful of cinnamon",
+   "b": "eat a spoonful of wasabi"
+  },
+  {
+   "a": "have an unlimited craft store budget",
+   "b": "have an unlimited bookstore budget"
+  },
+  {
+   "a": "be the main character in a cartoon",
+   "b": "be the main character in a soap opera"
+  }
+ ]
+}

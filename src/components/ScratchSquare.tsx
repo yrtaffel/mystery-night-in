@@ -53,6 +53,11 @@ function Revealed({ card }: { card: Card }) {
             Play Fridge Magnets →
           </Link>
         )}
+        {card.feature === "would-you-rather" && (
+          <Link href="/rather" className="mt-1.5 inline-block font-semibold text-lavender underline">
+            Play Would You Rather →
+          </Link>
+        )}
         {card.feature === "riddle-trail" && (
           <Link href="/trail" className="mt-1.5 inline-block font-semibold text-lavender underline">
             Start the Riddle Trail →
