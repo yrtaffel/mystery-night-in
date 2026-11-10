@@ -28,7 +28,7 @@ function ViewToggle({ view, onChange }: { view: View; onChange: (v: View) => voi
   return (
     <div role="group" aria-label="How to show the cards"
       className="mx-auto mb-4 flex max-w-xs rounded-full border border-line bg-white/70 p-1">
-      {opt("book", "Book view")}
+      {opt("book", "Card view")}
       {opt("list", "List view")}
     </div>
   );
