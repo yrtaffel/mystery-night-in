@@ -68,7 +68,12 @@ export default function CardItem({
     <article id={`c${card.id}`} className="scroll-mt-16 py-6" aria-labelledby={`card-${card.number}`}>
       <div className={`flex items-center gap-2 ${flip ? "flex-row-reverse" : ""}`}>
         <div className="w-[64%] shrink-0">
-          <MetaRow card={card} />
+          <h3 id={`card-${card.number}`}
+            className={`mb-1.5 font-title text-sm font-semibold tracking-wide sm:text-base ${flip ? "pl-9" : "pr-9"}`}>
+            <span className="font-normal text-ink-soft">{card.number}</span>
+            <span className="mx-1.5 text-line">|</span>
+            {card.title}
+          </h3>
           <div className="flex gap-2">
             {flip ? (
               <>
@@ -83,12 +88,8 @@ export default function CardItem({
             )}
           </div>
           <div className={`mt-2 ${flip ? "pl-9" : "pr-9"}`}>
-            <h3 id={`card-${card.number}`} className="font-title text-sm font-semibold tracking-wide sm:text-base">
-              <span className="font-normal text-ink-soft">{card.number}</span>
-              <span className="mx-1.5 text-line">|</span>
-              {card.title}
-            </h3>
-            <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+            <MetaRow card={card} />
+            <div className="flex flex-wrap gap-x-3 gap-y-1">
               <Rating count={card.spoons} kind="spoons" />
               <Rating count={card.brains} kind="brains" />
             </div>
