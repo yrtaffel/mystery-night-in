@@ -129,7 +129,7 @@
     {
       "id": 42,
       "page": "made-with-love",
-      "title": "VIBE CODE IT",
+      "title": "APP-Y BIRTHDAY",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "1 HR",
@@ -275,6 +275,22 @@
       ],
       "feature": "would-you-rather",
       "instructions": "Start a game on the Would You Rather page and send your adventure buddy the invite link. You'll each get two choices and have to pick one. No skipping! Then see who picked what, and be ready to defend your answers."
+    },
+    {
+      "id": 43,
+      "page": "game-night",
+      "title": "ESCAPE THE ROOM",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "45 MIN",
+      "spoons": 1,
+      "brains": 4,
+      "icons": [
+        "together",
+        "game",
+        "online"
+      ],
+      "instructions": "Find a free online escape room and try to break out together, side by side or over screen-share. Read every clue, check every corner, and say every wild theory out loud. Can you escape before time runs out?"
     },
     {
       "page": "cooking",
