@@ -259,7 +259,7 @@
     },
     {
       "page": "game-night",
-      "title": "PICTIONARY NIGHT",
+      "title": "DOODLE DUEL",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "30 MIN",
@@ -445,27 +445,27 @@
     },
     {
       "page": "just-for-you",
-      "title": "CURL UP & READ",
+      "title": "BOOK NOOK",
       "cost": "FREE",
       "time": "ANYTIME",
       "duration": "1 HR",
       "spoons": 1,
-      "brains": 2,
+      "brains": 1,
       "icons": [
         "solo",
         "learn"
       ],
-      "instructions": "Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour. Just you and the story.",
+      "instructions": "Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.",
       "id": 29
     },
     {
       "page": "just-for-you",
-      "title": "HOBBY STORE TREASURE HUNT",
-      "cost": "~$10",
+      "title": "HOBBY HUNT",
+      "cost": "~$20",
       "time": "DAYTIME",
       "duration": "1 HR",
-      "spoons": 3,
-      "brains": 1,
+      "spoons": 4,
+      "brains": 2,
       "icons": [
         "solo",
         "shopping",
@@ -476,7 +476,7 @@
     },
     {
       "page": "just-for-you",
-      "title": "A PROPER BATH",
+      "title": "SOUS VIDE YOURSELF",
       "cost": "$0–5",
       "time": "EVENING",
       "duration": "45 MIN",
@@ -487,22 +487,22 @@
         "pampering",
         "evening"
       ],
-      "instructions": "Run a warm bath with a few drops of essential oil (lavender is lovely). Dim the lights, play something calm, and soak. You deserve the slow version tonight.",
+      "instructions": "Run a warm bath with a few drops of essential oil or some bubble bath. Dim the lights, play something calm, and soak. You deserve some self-care tonight.",
       "id": 31
     },
     {
       "page": "just-for-you",
-      "title": "THREE SMALL BEAUTIFUL THINGS",
+      "title": "BEAUTIFUL THINGS",
       "cost": "FREE",
       "time": "DAYTIME",
-      "duration": "30 MIN",
-      "spoons": 2,
+      "duration": "20 MIN",
+      "spoons": 3,
       "brains": 1,
       "icons": [
         "solo",
         "daytime"
       ],
-      "instructions": "Leave your phone at home and take a gentle walk. Find 3 small beautiful things: a leaf, a pebble, a pretty shadow. Bring them home and snap a photo for this card.",
+      "instructions": "Leave your phone at home and take a leisurely stroll. Find 3 small beautiful things: a leaf, a pebble, anything that catches your eye. Bring them home and snap a photo. Digital variation: put your phone on Do Not Disturb and take 3 beautiful photos instead of collecting things.",
       "id": 32
     },
     {
@@ -518,14 +518,15 @@
         "art"
       ],
       "instructions": "Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day.",
-      "id": 33
+      "id": 33,
+      "cut": true
     },
     {
       "page": "just-for-you",
-      "title": "A THANK-YOU NOTE",
+      "title": "TY",
       "cost": "$0–1",
       "time": "ANYTIME",
-      "duration": "20 MIN",
+      "duration": "15 MIN",
       "spoons": 1,
       "brains": 2,
       "icons": [
@@ -541,11 +542,11 @@
       "time": "ANYTIME",
       "duration": "20 MIN",
       "spoons": 1,
-      "brains": 2,
+      "brains": 3,
       "icons": [
         "solo"
       ],
-      "instructions": "Write down 20 tiny things that bring you joy, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day.",
+      "instructions": "Write down 20 things that bring you joy. They can be tiny, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day.",
       "id": 35
     },
     {
@@ -562,7 +563,8 @@
         "evening"
       ],
       "instructions": "Look up today's sunset time. Brew a cup of tea, find a window or step outside, and watch the sky change.",
-      "id": 36
+      "id": 36,
+      "cut": true
     },
     {
       "page": "just-for-you",

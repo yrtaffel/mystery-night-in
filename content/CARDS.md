@@ -65,7 +65,7 @@ _Built-in feature: fridge-magnets_
 $ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 💕🎲  
 Take turns writing a story one sentence at a time. No planning allowed. Read the whole thing aloud at the end in your best narrator voice.
 
-**13 | PICTIONARY NIGHT**  
+**13 | DOODLE DUEL**  
 $ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎲  
 Open skribbl.io and make a private room. Optional: turn on "custom words only" and add your own, inside jokes welcome! Draw, guess, laugh.
 Link: https://skribbl.io
@@ -115,42 +115,34 @@ Make a playlist for each other with songs you think they'll like, or that remind
 
 ## Just for you
 
-**23 | CURL UP & READ**  
-$ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄 · 🧠🧠 · 🧖‍♀️📚  
-Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour. Just you and the story.
+**23 | BOOK NOOK**  
+$ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄 · 🧠 · 🧖‍♀️📚  
+Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.
 
-**24 | HOBBY STORE TREASURE HUNT**  
-$ ~$10 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄🥄 · 🧠 · 🧖‍♀️🛒🎨  
+**24 | HOBBY HUNT**  
+$ ~$20 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄🥄🥄 · 🧠🧠 · 🧖‍♀️🛒🎨  
 Visit a craft store with a small budget. Wander every aisle slowly. Bring home one or two treasures that make you excited to create.
 
-**25 | A PROPER BATH**  
+**25 | SOUS VIDE YOURSELF**  
 $ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄 · 🧠 · 🧖‍♀️💅🌙  
-Run a warm bath with a few drops of essential oil (lavender is lovely). Dim the lights, play something calm, and soak. You deserve the slow version tonight.
+Run a warm bath with a few drops of essential oil or some bubble bath. Dim the lights, play something calm, and soak. You deserve some self-care tonight.
 
-**26 | THREE SMALL BEAUTIFUL THINGS**  
-$ FREE · ⏰ DAYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠 · 🧖‍♀️☀️  
-Leave your phone at home and take a gentle walk. Find 3 small beautiful things: a leaf, a pebble, a pretty shadow. Bring them home and snap a photo for this card.
+**26 | BEAUTIFUL THINGS**  
+$ FREE · ⏰ DAYTIME · ⏳ 20 MIN · 🥄🥄🥄 · 🧠 · 🧖‍♀️☀️  
+Leave your phone at home and take a leisurely stroll. Find 3 small beautiful things: a leaf, a pebble, anything that catches your eye. Bring them home and snap a photo. Digital variation: put your phone on Do Not Disturb and take 3 beautiful photos instead of collecting things.
 
-**27 | PAINT TODAY IN THREE COLORS**  
-$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠 · 🧖‍♀️🎨  
-Pick 3 colors that feel like today. Paint anything: your view, your mood, or just shapes. There's no wrong way to paint a day.
-
-**28 | A THANK-YOU NOTE**  
-$ $0–1 · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
+**27 | TY**  
+$ $0–1 · ⏰ ANYTIME · ⏳ 15 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
 Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.
 
-**29 | THE JOY LIST**  
-$ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
-Write down 20 tiny things that bring you joy, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day.
+**28 | THE JOY LIST**  
+$ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠🧠 · 🧖‍♀️  
+Write down 20 things that bring you joy. They can be tiny, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day.
 
-**30 | SUNSET & TEA**  
-$ FREE · ⏰ EVENING · ⏳ 30 MIN · 🥄 · 🧠 · 🧖‍♀️☕🌙  
-Look up today's sunset time. Brew a cup of tea, find a window or step outside, and watch the sky change.
-
-**31 | JUDGE A BOOK BY ITS COVER**  
+**29 | JUDGE A BOOK BY ITS COVER**  
 $ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠 · 🧖‍♀️📚☀️  
 Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.
 
-**32 | DEAR ME**  
+**30 | DEAR ME**  
 $ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠🧠 · 🧖‍♀️  
 Write yourself a letter to open in one year (maybe on your next birthday?). What's happening now? What do you hope for? Seal it up, write "Open on ___," and hide it somewhere safe where you'll remember it. Digital variation: write it as an email and schedule it to send to yourself a year from now.
