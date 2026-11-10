@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import Link from "next/link";
 import type { Card } from "@/lib/cards";
 
 // Original ragged "brushstroke" shape that sits behind the revealed text.
@@ -46,6 +47,11 @@ function Revealed({ card }: { card: Card }) {
             className="mt-1 inline-block font-semibold text-lavender underline">
             Open link ↗
           </a>
+        )}
+        {card.feature === "riddle-trail" && (
+          <Link href="/trail" className="mt-1.5 inline-block font-semibold text-lavender underline">
+            Start the Riddle Trail →
+          </Link>
         )}
       </div>
     </div>

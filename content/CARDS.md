@@ -49,7 +49,7 @@ Make a little art piece for each other: postcard-sized, or go bigger with an 8.5
 
 **9 | THE RIDDLE TRAIL**  
 $ FREE · ⏰ ANYTIME · ⏳ 45 MIN · 🥄 · 🧠🧠🧠🧠 · 💕🎲  
-A secret trail of riddles lives right here on this site! Solve one to unlock the next clue. Work it out together on video. A little prize message waits at the end.
+Hop in the time machine! A trail of riddles lives right here on this site. Each answer unlocks the next stop, and only the final password opens the last door. Bring your sleuthing skills (and a search engine).
 _Built-in feature: riddle-trail_
 
 **10 | CROSSWORD CO-OP**  

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { cards, pages } from "@/lib/cards";
 import { useProgress, type ProgressRow } from "@/lib/progress";
 import CardItem from "./CardItem";
@@ -12,6 +12,13 @@ export default function CardBook() {
     (n: number) => (fields: Partial<ProgressRow>) => save(n, fields),
     [save],
   );
+
+  // Jump to a card (e.g. /#c12) once the cards have loaded.
+  useEffect(() => {
+    if (loaded && window.location.hash) {
+      document.querySelector(window.location.hash)?.scrollIntoView();
+    }
+  }, [loaded]);
 
   if (!loaded) {
     return <p className="py-16 text-center font-script text-3xl">Opening your book…</p>;
