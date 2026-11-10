@@ -216,7 +216,7 @@ export default function RiddleTrail() {
           </h2>
           <p className="mt-4 text-lg font-medium">{message}</p>
           <p className="mt-4 text-sm text-ink-soft">
-            Don&apos;t forget to tap &quot;Adventure complete!&quot; on the card. 💜
+            Don&apos;t forget to tap &quot;Adventure complete?&quot; on the card. 💜
           </p>
         </section>
       )}

@@ -33,7 +33,7 @@ type Props = {
   onUndo: () => void;
 };
 
-/** After scratching: a gentle countdown and an "Adventure complete!" button. */
+/** After scratching: a gentle countdown and an "Adventure complete?" button. */
 export default function CardStatus({ row, onComplete, onUndo }: Props) {
   if (!row?.scratched_at) return null;
 
@@ -66,7 +66,7 @@ export default function CardStatus({ row, onComplete, onUndo }: Props) {
         }}
         className="rounded-full bg-lavender-deep px-3 py-1.5 text-xs font-semibold text-white"
       >
-        Adventure complete! 🎉
+        Adventure complete? 🎉
       </button>
     </div>
   );
