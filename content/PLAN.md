@@ -22,3 +22,6 @@
 4. ✅ Photos, journal, countdown, progress page, rules page ("I did it!" → "Nice job! Hope you enjoyed that!"; books stay separate per person)
 5. ✅ Mini features: Time Travel riddle trail, Fridge Magnets (guest links, optional score), filters, 7 sections
 6. ✅ Birthday welcome, daily keep-awake ping (Vercel cron), final polish
+
+## Final card count
+36 cards for Atara's 36th birthday, in 7 sections.

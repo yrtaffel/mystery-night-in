@@ -144,23 +144,28 @@ Link: https://glassjar.garden/
 $ ~$20 · ⏰ DAYTIME · ⏳ 1 HR · 🥄🥄🥄🥄 · 🧠🧠 · 🧖‍♀️🛒🎨  
 Visit a craft store with a small budget. Wander every aisle slowly. Bring home one or two treasures that make you excited to create.
 
+**29 | BRAIN CANDY**  
+$ FREE · ⏰ ANYTIME · ⏳ 30 MIN · 🥄 · 🧠🧠 · 💕🎲🌐  
+Head to neal.fun, a website packed with weird, wonderful little games and experiments. Click whatever looks interesting and see where it takes you. Do it together and compare favorites, or wander on your own. No goals, no guilt, just fun.
+Link: https://neal.fun
+
 ---
 
 ## Slow down
 
-**29 | BOOK NOOK**  
+**30 | BOOK NOOK**  
 $ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄 · 🧠 · 🧖‍♀️📚  
 Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.
 
-**30 | SOUS VIDE YOURSELF**  
+**31 | SOUS VIDE YOURSELF**  
 $ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄 · 🧠 · 🧖‍♀️💅🌙  
 Run a warm bath with a few drops of essential oil or some bubble bath. Dim the lights, play something calm, and soak. You deserve some self-care tonight.
 
-**31 | BEAUTIFUL THINGS**  
+**32 | BEAUTIFUL THINGS**  
 $ FREE · ⏰ DAYTIME · ⏳ 20 MIN · 🥄🥄🥄 · 🧠 · 🧖‍♀️☀️  
 Leave your phone at home and take a leisurely stroll. Find 3 small beautiful things: a leaf, a pebble, anything that catches your eye. Bring them home and snap a photo. Digital variation: put your phone on Do Not Disturb and take 3 beautiful photos instead of collecting things.
 
-**32 | JUDGE A BOOK BY ITS COVER**  
+**33 | JUDGE A BOOK BY ITS COVER**  
 $ FREE · ⏰ DAYTIME · ⏳ 45 MIN · 🥄🥄 · 🧠 · 🧖‍♀️📚☀️  
 Go to the library and pick a book only by its cover. No reading the back! Not your thing once you start? Return it, no guilt. Tell your adventure buddy which cover won.
 
@@ -168,14 +173,14 @@ Go to the library and pick a book only by its cover. No reading the back! Not yo
 
 ## Just for you
 
-**33 | THANK YOU, GOOD NIGHT**  
+**34 | THANK YOU, GOOD NIGHT**  
 $ $0–1 · ⏰ ANYTIME · ⏳ 15 MIN · 🥄 · 🧠🧠 · 🧖‍♀️  
 Think of someone who made your life a little better, recently or long ago. Write them a real thank-you note. Send it or keep it, whatever feels right.
 
-**34 | THE JOY LIST**  
+**35 | THE JOY LIST**  
 $ FREE · ⏰ ANYTIME · ⏳ 20 MIN · 🥄 · 🧠🧠🧠 · 🧖‍♀️  
 Write down 20 things that bring you joy. They can be tiny, like warm socks, the first sip of coffee, a certain song. Small is the whole point. Save it on this card for a rainy day.
 
-**35 | DEAR ME**  
+**36 | DEAR ME**  
 $ $0–5 · ⏰ ANYTIME · ⏳ 30 MIN · 🥄🥄 · 🧠🧠🧠 · 🧖‍♀️  
 Write yourself a letter to open in one year (maybe on your next birthday?). What's happening now? What do you hope for? Seal it up, write "Open on ___," and hide it somewhere safe where you'll remember it. Digital variation: write it as an email and schedule it to send to yourself a year from now.

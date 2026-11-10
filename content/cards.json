@@ -498,6 +498,23 @@
       "id": 30
     },
     {
+      "id": 44,
+      "page": "treat-yourself",
+      "title": "BRAIN CANDY",
+      "cost": "FREE",
+      "time": "ANYTIME",
+      "duration": "30 MIN",
+      "spoons": 1,
+      "brains": 2,
+      "icons": [
+        "together",
+        "game",
+        "online"
+      ],
+      "link": "https://neal.fun",
+      "instructions": "Head to neal.fun, a website packed with weird, wonderful little games and experiments. Click whatever looks interesting and see where it takes you. Do it together and compare favorites, or wander on your own. No goals, no guilt, just fun."
+    },
+    {
       "page": "slow-down",
       "title": "BOOK NOOK",
       "cost": "FREE",
