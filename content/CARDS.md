@@ -157,7 +157,7 @@ Link: https://neal.fun
 $ FREE · ⏰ ANYTIME · ⏳ 1 HR · 🥄 · 🧠 · 🧖‍♀️📚  
 Find your coziest spot with a blanket and a warm drink. Put your phone in another room and read for one whole hour, uninterrupted. Just you and the story.
 
-**31 | SOUS VIDE YOURSELF**  
+**31 | STEEP LIKE A TEA BAG**  
 $ $0–5 · ⏰ EVENING · ⏳ 45 MIN · 🥄🥄 · 🧠 · 🧖‍♀️💅🌙  
 Run a warm bath with a few drops of essential oil or some bubble bath. Dim the lights, play something calm, and soak. You deserve some self-care tonight.
 
