@@ -2,36 +2,57 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
+import Link from "next/link";
 import {
-  apply, canVoteForSelf, dealTiles, host, joinTiles, makeId, moreTiles, newGame, voteCounts,
-  type Action, type GameState,
+  apply, canVoteForSelf, dealTiles, host, joinTiles, makeId, MAX_LINES, moreTiles, newGame, NEWLINE, REACTIONS,
+  voteCounts, type Action, type GameState,
 } from "@/lib/magnets";
 import { connect, type Transport } from "@/lib/magnetsTransport";
+import AnswerBuilder, { tileClass, tilt } from "./AnswerBuilder";
 import { Invite, NAME_KEY, NameForm, read, write } from "./RoomBits";
 
 type Msg = { kind: "action"; action: Action } | { kind: "state"; state: GameState } | { kind: "hello" };
 
-const tilt = (i: number) => ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "rotate-0"][i % 5];
+const emptyLines = () => Array.from({ length: MAX_LINES }, () => [] as number[]);
 
-
-function Tile({ word, onClick, i, label }: { word: string; onClick: () => void; i: number; label: string }) {
+/** A tile in the pile. Used tiles leave an empty spot, so nothing shifts around. */
+function PileTile({ word, i, used, onClick }: { word: string; i: number; used: boolean; onClick: () => void }) {
   return (
-    <button type="button" onClick={onClick} aria-label={label}
-      className={`rounded-[3px] bg-white px-2 py-1 text-[15px] leading-tight shadow-[0_1px_3px_rgba(0,0,0,0.25)] ${tilt(i)}`}>
+    <button type="button" onClick={onClick} disabled={used} aria-hidden={used} tabIndex={used ? -1 : 0}
+      aria-label={`Add ${word}`} className={`${tileClass} ${tilt(i)} ${used ? "invisible" : ""}`}>
       {word}
     </button>
   );
 }
 
+/** Shows a finished answer, line by line. */
 function Answer({ words }: { words: string[] }) {
+  const lines: string[][] = [[]];
+  for (const w of words) {
+    if (w === NEWLINE) lines.push([]);
+    else lines[lines.length - 1].push(w);
+  }
+  let k = 0;
   return (
-    <p className="flex flex-wrap gap-1.5">
-      {words.map((w, i) => (
-        <span key={i} className={`rounded-[3px] bg-white px-2 py-1 text-[15px] shadow-[0_1px_3px_rgba(0,0,0,0.25)] ${tilt(i)}`}>
-          {w}
-        </span>
+    <div className="space-y-2">
+      {lines.filter((l) => l.length).map((line, li) => (
+        <p key={li} className="flex flex-wrap gap-1.5">
+          {line.map((w) => {
+            const i = k++;
+            return <span key={i} className={`${tileClass} ${tilt(i)}`}>{w}</span>;
+          })}
+        </p>
       ))}
-    </p>
+    </div>
+  );
+}
+
+function Toggle({ checked, onChange, label }: { checked: boolean; onChange: () => void; label: string }) {
+  return (
+    <label className="flex items-center justify-center gap-2 text-sm">
+      <input type="checkbox" checked={checked} onChange={onChange} className="h-5 w-5 accent-[var(--lavender-deep)]" />
+      {label}
+    </label>
   );
 }
 
@@ -154,14 +175,42 @@ export default function MagnetsGame() {
 
   // My tiles for this round.
   const [tiles, setTiles] = useState<string[]>([]);
-  const [picked, setPicked] = useState<number[]>([]);
+  const [lines, setLines] = useState<number[][]>(emptyLines);
+  const [activeLine, setActiveLine] = useState(0);
   const round = state?.round ?? 0;
+  const resetAnswer = () => {
+    setLines(emptyLines());
+    setActiveLine(0);
+  };
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- new tiles each round
     setTiles(dealTiles());
-    setPicked([]);
+    setLines(emptyLines());
+    setActiveLine(0);
   }, [round]);
-  const answer = useMemo(() => picked.map((i) => tiles[i]), [picked, tiles]);
+  const used = useMemo(() => new Set(lines.flat()), [lines]);
+  // The answer as words, with a line-break tile between lines.
+  const answer = useMemo(() => {
+    const filled = lines.filter((l) => l.length).map((l) => l.map((i) => tiles[i]));
+    return filled.flatMap((l, n) => (n ? [NEWLINE, ...l] : l));
+  }, [lines, tiles]);
+  const addTile = (i: number) =>
+    setLines((cur) => cur.map((l, n) => (n === activeLine ? [...l, i] : l)));
+
+  // Guests: notice if the host's game goes quiet (they closed it or lost connection).
+  const [lastHeard, setLastHeard] = useState(() => Date.now());
+  const [clock, setClock] = useState(() => Date.now());
+  const stateV = state?.v;
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- remember when the host last spoke
+    setLastHeard(Date.now());
+  }, [stateV]);
+  useEffect(() => {
+    if (me?.isHost) return;
+    const t = setInterval(() => setClock(Date.now()), 3000);
+    return () => clearInterval(t);
+  }, [me]);
+  const hostQuiet = !me?.isHost && !!state && state.phase !== "ended" && clock - lastHeard > 15000;
 
   // Round timer: tick every half second while a timed round is running.
   const [now, setNow] = useState(() => Date.now());
@@ -201,6 +250,21 @@ export default function MagnetsGame() {
     );
   }
 
+  if (state?.phase === "ended") {
+    return (
+      <div className="rounded-2xl bg-white/70 p-8 text-center shadow-md">
+        <p className="text-5xl" aria-hidden="true">🧲</p>
+        <h2 className="mt-2 font-script text-4xl">This game is over</h2>
+        <p className="mt-2">Thanks for playing! Hope you laughed a lot.</p>
+        {me?.isHost && (
+          <Link href="/magnets" className="mt-5 inline-block rounded-full bg-lavender-deep px-5 py-2.5 font-semibold text-white">
+            Start a new game
+          </Link>
+        )}
+      </div>
+    );
+  }
+
   if (!me || !state || !joined) {
     return (
       <div className="py-12 text-center">
@@ -218,7 +282,7 @@ export default function MagnetsGame() {
   const waitingOn = state.players.filter((p) =>
     state.phase === "writing" ? !state.submitted[p.id] : state.phase === "reveal" ? !state.votes[p.id] : false);
 
-  const scoreboard = state.keepScore && (
+  const scoreboard = state.voting && state.keepScore && (
     <div className="mt-6 rounded-2xl bg-white/60 p-4 shadow-sm">
       <p className="mb-2 text-center font-title text-xs tracking-[0.2em] text-ink-soft uppercase">Scores</p>
       <ul className="space-y-1">
@@ -231,8 +295,31 @@ export default function MagnetsGame() {
     </div>
   );
 
+  const endGame = isHost && (
+    <p className="mt-6 text-center">
+      <button type="button" className="text-xs text-ink-soft underline"
+        onClick={() => window.confirm("End the game for everyone?") && hostDo(host.end)}>
+        End the game
+      </button>
+    </p>
+  );
+
+  const settings = isHost && (
+    <div className="flex flex-col gap-2">
+      <Toggle checked={state.voting} onChange={() => hostDo(host.toggleVoting)} label="Vote for a winner each round" />
+      {state.voting && <Toggle checked={state.keepScore} onChange={() => hostDo(host.toggleScore)} label="Keep score" />}
+      <TimerPicker value={state.timerSec ?? 0} onChange={(sec) => hostDo((s) => host.setTimer(s, sec))} />
+    </div>
+  );
+
   return (
     <div>
+      {hostQuiet && (
+        <p role="status" className="mb-4 rounded-lg bg-white/80 p-3 text-center text-sm">
+          Hmm, {hostName}&apos;s game has gone quiet. They may have closed it or lost connection.
+        </p>
+      )}
+
       {state.phase === "lobby" && (
         <>
           <Invite code={code} path="play" title="Fridge Magnets" />
@@ -246,11 +333,7 @@ export default function MagnetsGame() {
           </div>
           {isHost ? (
             <div className="mt-6 flex flex-col gap-3">
-              <label className="flex items-center justify-center gap-2 text-sm">
-                <input type="checkbox" checked={state.keepScore} onChange={() => hostDo(host.toggleScore)} className="h-5 w-5 accent-[var(--lavender-deep)]" />
-                Keep score
-              </label>
-              <TimerPicker value={state.timerSec ?? 0} onChange={(sec) => hostDo((s) => host.setTimer(s, sec))} />
+              {settings}
               <button type="button" onClick={() => hostDo(host.startRound)}
                 className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white">
                 {state.round ? "Start next round" : "Start the game!"}
@@ -260,6 +343,7 @@ export default function MagnetsGame() {
           ) : (
             <p className="mt-6 text-center">Waiting for {hostName} to start… ✨</p>
           )}
+          {state.round > 0 && endGame}
         </>
       )}
 
@@ -280,30 +364,27 @@ export default function MagnetsGame() {
             </div>
           ) : (
             <>
-              <div className="mt-4 min-h-24 rounded-2xl border-2 border-dashed border-line bg-white/40 p-3" aria-label="Your answer">
-                {answer.length === 0 ? (
-                  <p className="text-center text-sm text-ink-soft">Tap words below to build your answer</p>
-                ) : (
-                  <div className="flex flex-wrap gap-1.5">
-                    {picked.map((ti, i) => (
-                      <Tile key={ti} i={i} word={tiles[ti]} label={`Remove ${tiles[ti]}`}
-                        onClick={() => setPicked((p) => p.filter((x) => x !== ti))} />
-                    ))}
-                  </div>
-                )}
+              <AnswerBuilder tiles={tiles} lines={lines} setLines={setLines}
+                activeLine={activeLine} setActiveLine={setActiveLine} />
+              <div className="mt-2 flex items-center justify-between gap-2">
+                <p className="min-w-0 truncate text-sm italic text-ink-soft">
+                  {answer.length ? <>&ldquo;{joinTiles(answer)}&rdquo;</> : "Tip: drag words to move them"}
+                </p>
+                <button type="button" disabled={activeLine >= MAX_LINES - 1}
+                  onClick={() => setActiveLine((n) => Math.min(n + 1, MAX_LINES - 1))}
+                  className="shrink-0 rounded-full border border-line bg-white px-3 py-1.5 text-sm disabled:opacity-40">
+                  New line ↵
+                </button>
               </div>
-              {answer.length > 0 && (
-                <p className="mt-2 text-center text-sm italic text-ink-soft">&ldquo;{joinTiles(answer)}&rdquo;</p>
-              )}
               <button type="button" disabled={!answer.length} onClick={() => act({ type: "submit", id: me.id, words: answer })}
                 className="mt-3 w-full rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white disabled:opacity-60">
                 Done!
               </button>
               <div className="mt-2 flex gap-2">
-                <button type="button" onClick={() => setPicked([])} className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
+                <button type="button" onClick={resetAnswer} className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
                   Clear
                 </button>
-                <button type="button" onClick={() => { setTiles(dealTiles()); setPicked([]); }}
+                <button type="button" onClick={() => { setTiles(dealTiles()); resetAnswer(); }}
                   className="flex-1 rounded-full border border-line bg-white px-3 py-2.5 text-sm">
                   New tiles
                 </button>
@@ -313,11 +394,9 @@ export default function MagnetsGame() {
                 </button>
               </div>
               <div className="mt-4 flex flex-wrap gap-2 rounded-2xl bg-[#e9e6ee] p-3" aria-label="Word tiles">
-                {tiles.map((w, i) =>
-                  picked.includes(i) ? null : (
-                    <Tile key={i} i={i} word={w} label={`Add ${w}`} onClick={() => setPicked((p) => [...p, i])} />
-                  ),
-                )}
+                {tiles.map((w, i) => (
+                  <PileTile key={i} i={i} word={w} used={used.has(i)} onClick={() => addTile(i)} />
+                ))}
               </div>
             </>
           )}
@@ -335,7 +414,54 @@ export default function MagnetsGame() {
         </>
       )}
 
-      {state.phase === "reveal" && (
+      {state.phase === "reveal" && !state.voting && (
+        <>
+          <h2 className="text-center text-xl font-semibold">{state.prompt}</h2>
+          <p className="mt-1 text-center text-sm text-ink-soft">Read them out loud, dramatically!</p>
+          {state.order.length === 0 && (
+            <p className="mt-6 text-center">Time ran out before anyone finished! 😅</p>
+          )}
+          <ul className="mt-5 space-y-4">
+            {state.order.map((pid) => {
+              const p = state.players.find((x) => x.id === pid);
+              const list = state.reactions?.[pid] ?? [];
+              return (
+                <li key={pid} className="rounded-2xl bg-white/60 p-4 shadow-sm">
+                  <p className="mb-2 font-semibold">{p?.name ?? "Someone"}{pid === me.id ? " (you)" : ""}</p>
+                  <Answer words={state.submitted[pid] ?? []} />
+                  <div className="mt-3 flex gap-2">
+                    {REACTIONS.map((emoji) => {
+                      const count = list.filter((k) => k.endsWith(`:${emoji}`)).length;
+                      const mine = list.includes(`${me.id}:${emoji}`);
+                      return (
+                        <button key={emoji} type="button" aria-pressed={mine}
+                          onClick={() => act({ type: "react", id: me.id, target: pid, emoji })}
+                          className={`rounded-full px-3 py-1 text-sm ${mine ? "bg-lavender" : "border border-line bg-white"}`}>
+                          {emoji}{count ? ` ${count}` : ""}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+          {isHost ? (
+            <div className="mt-6 flex flex-col gap-3">
+              <button type="button" onClick={() => hostDo(host.startRound)}
+                className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white">
+                Next round
+              </button>
+              {settings}
+            </div>
+          ) : (
+            <p className="mt-6 text-center">Waiting for {hostName} to start the next round…</p>
+          )}
+          {endGame}
+        </>
+      )}
+
+      {state.phase === "reveal" && state.voting && (
         <>
           <h2 className="text-center text-xl font-semibold">{state.prompt}</h2>
           <p className="mt-1 text-center text-sm text-ink-soft">Read them out loud, dramatically. Then vote for your favorite!</p>
@@ -373,6 +499,7 @@ export default function MagnetsGame() {
               <button type="button" className="text-sm underline" onClick={() => hostDo(host.results)}>Show results now</button>
             </p>
           )}
+          {endGame}
         </>
       )}
 
@@ -405,11 +532,7 @@ export default function MagnetsGame() {
                   className="rounded-full bg-lavender-deep px-4 py-3 font-semibold text-white">
                   Next round
                 </button>
-                <label className="flex items-center justify-center gap-2 text-sm">
-                  <input type="checkbox" checked={state.keepScore} onChange={() => hostDo(host.toggleScore)} className="h-5 w-5 accent-[var(--lavender-deep)]" />
-                  Keep score
-                </label>
-                <TimerPicker value={state.timerSec ?? 0} onChange={(sec) => hostDo((s) => host.setTimer(s, sec))} />
+                {settings}
                 <button type="button" className="text-sm underline" onClick={() => hostDo(host.backToLobby)}>
                   Back to the lobby (invite more friends)
                 </button>
@@ -417,6 +540,7 @@ export default function MagnetsGame() {
             ) : (
               <p className="mt-6 text-center">Waiting for {hostName} to start the next round…</p>
             )}
+            {endGame}
           </>
         );
       })()}

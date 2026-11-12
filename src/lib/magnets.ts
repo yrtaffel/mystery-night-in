@@ -1,6 +1,6 @@
 import data from "../../content/magnets.json";
 
-export type Phase = "lobby" | "writing" | "reveal" | "results";
+export type Phase = "lobby" | "writing" | "reveal" | "results" | "ended";
 export type Player = { id: string; name: string; score: number };
 
 export type GameState = {
@@ -15,6 +15,8 @@ export type GameState = {
   votes: Record<string, string>; // voter -> whose answer
   order: string[]; // reveal order (shuffled, so answers are anonymous)
   keepScore: boolean;
+  voting: boolean; // off = just read the answers and react, no winner
+  reactions: Record<string, string[]>; // answer owner -> ["reactorId:emoji", ...]
   timerSec: number; // 0 = no timer
   deadline: number | null; // when this round's timer runs out (ms)
 };
@@ -23,7 +25,13 @@ export type Action =
   | { type: "join"; id: string; name: string }
   | { type: "submit"; id: string; words: string[] }
   | { type: "unsubmit"; id: string }
-  | { type: "vote"; id: string; target: string };
+  | { type: "vote"; id: string; target: string }
+  | { type: "react"; id: string; target: string; emoji: string };
+
+/** A tile that starts a new line in an answer. */
+export const NEWLINE = "\n";
+export const MAX_LINES = 4;
+export const REACTIONS = ["❤️", "😂"];
 
 const pick = <T,>(list: T[]) => list[Math.floor(Math.random() * list.length)];
 
@@ -66,6 +74,10 @@ export function dealTiles(): string[] {
 export function joinTiles(words: string[]) {
   let out = "";
   for (const w of words) {
+    if (w === NEWLINE) {
+      out += " / ";
+      continue;
+    }
     if (w.startsWith("-")) out += w.slice(1);
     else if ([",", "!", "?", ".", "..."].includes(w)) out += w;
     else out += (out ? " " : "") + w;
@@ -77,7 +89,7 @@ export function newGame(hostId: string, hostName: string, keepScore: boolean): G
   return {
     v: 1, hostId, phase: "lobby", round: 0, prompt: "", usedPrompts: [],
     players: [{ id: hostId, name: hostName, score: 0 }],
-    submitted: {}, votes: {}, order: [], keepScore, timerSec: 0, deadline: null,
+    submitted: {}, votes: {}, order: [], keepScore, voting: false, reactions: {}, timerSec: 0, deadline: null,
   };
 }
 
@@ -102,7 +114,10 @@ export const voteCounts = tally;
 export const host = {
   startRound(s: GameState): GameState {
     const deadline = s.timerSec ? Date.now() + s.timerSec * 1000 : null;
-    return { ...s, v: s.v + 1, phase: "writing", round: s.round + 1, ...nextPrompt(s), submitted: {}, votes: {}, order: [], deadline };
+    return {
+      ...s, v: s.v + 1, phase: "writing", round: s.round + 1, ...nextPrompt(s),
+      submitted: {}, votes: {}, reactions: {}, order: [], deadline,
+    };
   },
   newPrompt(s: GameState): GameState {
     const deadline = s.timerSec ? Date.now() + s.timerSec * 1000 : null;
@@ -124,6 +139,12 @@ export const host = {
   toggleScore(s: GameState): GameState {
     return { ...s, v: s.v + 1, keepScore: !s.keepScore };
   },
+  toggleVoting(s: GameState): GameState {
+    return { ...s, v: s.v + 1, voting: !s.voting };
+  },
+  end(s: GameState): GameState {
+    return { ...s, v: s.v + 1, phase: "ended", deadline: null };
+  },
   backToLobby(s: GameState): GameState {
     return { ...s, v: s.v + 1, phase: "lobby", submitted: {}, votes: {}, order: [] };
   },
@@ -143,12 +164,20 @@ export function apply(s: GameState, a: Action): GameState {
         : [...s.players, { id: a.id, name, score: 0 }],
     };
   } else if (a.type === "submit" && s.phase === "writing") {
-    next = { ...s, submitted: { ...s.submitted, [a.id]: a.words.slice(0, 40) } };
+    next = { ...s, submitted: { ...s.submitted, [a.id]: a.words.slice(0, 60) } };
   } else if (a.type === "unsubmit" && s.phase === "writing") {
     const submitted = { ...s.submitted };
     delete submitted[a.id];
     next = { ...s, submitted };
-  } else if (a.type === "vote" && s.phase === "reveal") {
+  } else if (a.type === "react" && s.phase === "reveal" && s.submitted[a.target]) {
+    const key = `${a.id}:${a.emoji}`;
+    const list = s.reactions?.[a.target] ?? [];
+    const reactions = {
+      ...s.reactions,
+      [a.target]: list.includes(key) ? list.filter((k) => k !== key) : [...list, key],
+    };
+    next = { ...s, reactions };
+  } else if (a.type === "vote" && s.phase === "reveal" && s.voting) {
     if (a.target === a.id && !canVoteForSelf(s)) return s;
     next = { ...s, votes: { ...s.votes, [a.id]: a.target } };
   } else {
@@ -158,6 +187,6 @@ export function apply(s: GameState, a: Action): GameState {
 
   const everyone = next.players.map((p) => p.id);
   if (next.phase === "writing" && everyone.every((id) => next.submitted[id])) next = host.reveal(next);
-  else if (next.phase === "reveal" && everyone.every((id) => next.votes[id])) next = host.results(next);
+  else if (next.phase === "reveal" && next.voting && everyone.every((id) => next.votes[id])) next = host.results(next);
   return next;
 }
