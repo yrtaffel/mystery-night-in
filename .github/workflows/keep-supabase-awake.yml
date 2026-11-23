@@ -1,0 +1,22 @@
+# Backup for the Vercel cron: a tiny daily request to Supabase so the free
+# project never pauses from inactivity. (The key below is the public
+# "publishable" key that every visitor's browser already gets.)
+name: Keep Supabase awake
+
+on:
+  schedule:
+    - cron: "41 15 * * *" # once a day
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        env:
+          URL: https://jdkbpysxfseecohewqpd.supabase.co
+          KEY: sb_publishable_uQJ3rDWSWJSfJYlF4UtSeQ_mVo9vt69
+        run: |
+          curl -fsS "$URL/rest/v1/card_progress?select=card_number&limit=1" \
+            -H "apikey: $KEY" -H "Authorization: Bearer $KEY"
+          curl -fsS "$URL/auth/v1/health" -H "apikey: $KEY"
