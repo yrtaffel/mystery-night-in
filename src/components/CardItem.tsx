@@ -103,6 +103,7 @@ export default function CardItem({
         <div className="min-w-0 flex-1">
           <PhotoSlot
             cardNumber={card.number}
+            title={card.title}
             locked={!revealed}
             url={photoUrl}
             onUpload={onUpload}

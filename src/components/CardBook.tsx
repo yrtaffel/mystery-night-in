@@ -37,6 +37,10 @@ function ViewToggle({ view, onChange }: { view: View; onChange: (v: View) => voi
 export default function CardBook() {
   const { rows, photoUrls, loaded, problem, save, uploadPhoto, removePhoto } = useProgress();
   const [filters, setFilters] = useState<Filters>(EMPTY);
+  // Cards she changed while filtering (scratched, completed…) stay on screen
+  // until she changes the filters or reloads, so nothing vanishes mid-use.
+  const [keepShown, setKeepShown] = useState<Set<number>>(() => new Set());
+  const keep = (id: number) => setKeepShown((s) => (s.has(id) ? s : new Set(s).add(id)));
   const [view, setView] = useState<View>("book");
   const [openId, setOpenId] = useState<number | null>(null);
 
@@ -53,6 +57,7 @@ export default function CardBook() {
   }, []);
   const changeFilters = (f: Filters) => {
     setFilters(f);
+    setKeepShown(new Set());
     try {
       localStorage.setItem(FILTER_KEY, JSON.stringify(f));
     } catch {
@@ -83,7 +88,10 @@ export default function CardBook() {
   }, [view, openId]);
 
   const saveFields = useCallback(
-    (n: number) => (fields: Partial<ProgressRow>) => save(n, fields),
+    (n: number) => (fields: Partial<ProgressRow>) => {
+      keep(n);
+      return save(n, fields);
+    },
     [save],
   );
 
@@ -98,7 +106,7 @@ export default function CardBook() {
     return <p className="py-16 text-center font-script text-3xl">Opening your book…</p>;
   }
 
-  const visible = cards.filter((c) => matches(c, rows[c.id], filters));
+  const visible = cards.filter((c) => keepShown.has(c.id) || matches(c, rows[c.id], filters));
 
   let index = 0;
   return (
@@ -156,7 +164,10 @@ export default function CardBook() {
                   flip={index++ % 2 === 1}
                   row={row}
                   photoUrl={row?.photo_path ? photoUrls[row.photo_path] : undefined}
-                  onReveal={() => save(card.id, { scratched_at: new Date().toISOString() })}
+                  onReveal={() => {
+                    keep(card.id);
+                    save(card.id, { scratched_at: new Date().toISOString() });
+                  }}
                   onSave={saveFields(card.id)}
                   onUpload={(file) => uploadPhoto(card.id, file)}
                   onRemovePhoto={() => removePhoto(card.id)}

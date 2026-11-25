@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { cards } from "@/lib/cards";
 import { useProgress } from "@/lib/progress";
+import PhotoLightbox from "./PhotoLightbox";
 
 function Stat({ value, label }: { value: string; label: string }) {
   return (
@@ -15,6 +17,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 
 export default function ProgressView() {
   const { rows, photoUrls, loaded } = useProgress();
+  const [openId, setOpenId] = useState<number | null>(null);
   if (!loaded) return <p className="py-16 text-center font-script text-3xl">Counting adventures…</p>;
 
   const list = Object.values(rows);
@@ -51,7 +54,8 @@ export default function ProgressView() {
         <ul className="grid grid-cols-2 gap-x-4 gap-y-8">
           {photos.map(({ card, url }, i) => (
             <li key={card.id}>
-              <Link href={`/#c${card.id}`} className="block">
+              <button type="button" onClick={() => setOpenId(card.id)} className="block w-full"
+                aria-label={`See the photo for ${card.title} full size`}>
                 <span className={`relative block bg-white p-1.5 pb-3 shadow-md ${i % 2 ? "rotate-2" : "-rotate-2"}`}>
                   <span aria-hidden="true"
                     className="absolute -top-3 left-1/2 block h-6 w-14 -translate-x-1/2 -rotate-6 rounded-[2px] bg-[var(--tape)] shadow-sm" />
@@ -61,11 +65,20 @@ export default function ProgressView() {
                 <span className="mt-2 block text-center font-title text-xs tracking-wide">
                   {card.number} | {card.title}
                 </span>
-              </Link>
+              </button>
             </li>
           ))}
         </ul>
       )}
+      {(() => {
+        const open = photos.find((p) => p.card.id === openId);
+        return (
+          <PhotoLightbox url={open?.url ?? null} caption={open ? `${open.card.number} | ${open.card.title}` : undefined}
+            onClose={() => setOpenId(null)}>
+            {open && <Link href={`/#c${open.card.id}`} className="underline">Go to this card →</Link>}
+          </PhotoLightbox>
+        );
+      })()}
     </>
   );
 }

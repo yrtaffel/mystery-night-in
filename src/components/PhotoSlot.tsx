@@ -1,9 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
+import PhotoLightbox from "./PhotoLightbox";
 
 type Props = {
   cardNumber: number;
+  title?: string;
   locked: boolean; // photos open up after the card is scratched
   url?: string;
   onUpload: (file: File) => Promise<boolean>;
@@ -14,10 +16,11 @@ const Tape = ({ className = "" }: { className?: string }) => (
   <span aria-hidden="true" className={`block rounded-[2px] bg-[var(--tape)] shadow-sm ${className}`} />
 );
 
-export default function PhotoSlot({ cardNumber, locked, url, onUpload, onRemove }: Props) {
+export default function PhotoSlot({ cardNumber, title, locked, url, onUpload, onRemove }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [big, setBig] = useState(false);
 
   async function pick(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -39,14 +42,19 @@ export default function PhotoSlot({ cardNumber, locked, url, onUpload, onRemove 
     return (
       <div className="flex flex-col items-center gap-2">
         {input}
-        <button type="button" onClick={() => setMenu((m) => !m)}
+        <button type="button" onClick={() => setBig(true)}
           className="relative mt-3 rotate-2 bg-white p-1.5 pb-4 shadow-md"
-          aria-label={`Photo for card ${cardNumber}. Tap for options.`}>
+          aria-label={`Photo for card ${cardNumber}. Tap to see it full size.`}>
           <Tape className="absolute -top-3 left-1/2 h-6 w-14 -translate-x-1/2 -rotate-6" />
           {/* eslint-disable-next-line @next/next/no-img-element -- private, signed photo URL */}
           <img src={url} alt="" className="max-h-44 w-full object-cover" />
         </button>
         {busy && <p className="text-xs text-ink-soft">Uploading…</p>}
+        {!menu && !busy && (
+          <button type="button" className="text-[11px] text-ink-soft underline" onClick={() => setMenu(true)}>
+            Photo options
+          </button>
+        )}
         {menu && !busy && (
           <div className="flex gap-3 text-xs">
             <button type="button" className="underline" onClick={() => inputRef.current?.click()}>
@@ -56,8 +64,13 @@ export default function PhotoSlot({ cardNumber, locked, url, onUpload, onRemove 
               onClick={async () => { setMenu(false); await onRemove(); }}>
               Remove
             </button>
+            <button type="button" className="text-ink-soft" onClick={() => setMenu(false)} aria-label="Close photo options">
+              ✕
+            </button>
           </div>
         )}
+        <PhotoLightbox url={big ? url : null} caption={title ? `${cardNumber} | ${title}` : undefined}
+          onClose={() => setBig(false)} />
       </div>
     );
   }
